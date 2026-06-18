@@ -12,6 +12,7 @@ const execAsync = promisify(exec);
 // Draw documents, which have no DOCX export filter. pdf2docx produces a genuinely
 // editable Word document with text and tables preserved.
 const SCRIPT = join(process.cwd(), "scripts", "pdf2docx_convert.py");
+const PYTHON = process.env.PYTHON_BIN || "python3.11";
 
 export async function POST(req: NextRequest) {
   const id = randomUUID();
@@ -27,7 +28,7 @@ export async function POST(req: NextRequest) {
     const bytes = await file.arrayBuffer();
     await writeFile(inputPath, Buffer.from(bytes));
 
-    await execAsync(`python3 "${SCRIPT}" "${inputPath}" "${outputPath}"`, {
+    await execAsync(`${PYTHON} "${SCRIPT}" "${inputPath}" "${outputPath}"`, {
       timeout: 120000,
     });
 

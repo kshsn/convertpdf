@@ -22,8 +22,9 @@ export async function POST(req: NextRequest) {
     const bytes = await file.arrayBuffer();
     await writeFile(inputPath, Buffer.from(bytes));
 
+    const profileDir = join(tmpdir(), `${id}-loprofile`);
     await execAsync(
-      `libreoffice --headless --convert-to docx "${inputPath}" --outdir "${tmpdir()}"`,
+      `libreoffice -env:UserInstallation=file://${profileDir} --headless --convert-to docx "${inputPath}" --outdir "${tmpdir()}"`,
     );
 
     const result = await readFile(outputPath);
@@ -45,5 +46,8 @@ export async function POST(req: NextRequest) {
   } finally {
     await unlink(inputPath).catch(() => {});
     await unlink(outputPath).catch(() => {});
+    await execAsync(`rm -rf "${join(tmpdir(), `${id}-loprofile`)}"`).catch(
+      () => {},
+    );
   }
 }

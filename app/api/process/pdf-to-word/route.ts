@@ -8,10 +8,15 @@ import { randomUUID } from "crypto";
 
 const execAsync = promisify(exec);
 
+// pdf2docx is used instead of LibreOffice because LibreOffice imports PDFs as
+// Draw documents, which have no DOCX export filter. pdf2docx produces a genuinely
+// editable Word document with text and tables preserved.
+const SCRIPT = join(process.cwd(), "scripts", "pdf2docx_convert.py");
+
 export async function POST(req: NextRequest) {
   const id = randomUUID();
   const inputPath = join(tmpdir(), `${id}-input.pdf`);
-  const outputPath = join(tmpdir(), `${id}-input.docx`);
+  const outputPath = join(tmpdir(), `${id}-output.docx`);
 
   try {
     const form = await req.formData();
@@ -22,10 +27,9 @@ export async function POST(req: NextRequest) {
     const bytes = await file.arrayBuffer();
     await writeFile(inputPath, Buffer.from(bytes));
 
-    const profileDir = join(tmpdir(), `${id}-loprofile`);
-    await execAsync(
-      `libreoffice -env:UserInstallation=file://${profileDir} --headless --convert-to docx "${inputPath}" --outdir "${tmpdir()}"`,
-    );
+    await execAsync(`python3 "${SCRIPT}" "${inputPath}" "${outputPath}"`, {
+      timeout: 120000,
+    });
 
     const result = await readFile(outputPath);
     return new NextResponse(result, {
@@ -37,17 +41,11 @@ export async function POST(req: NextRequest) {
     });
   } catch {
     return NextResponse.json(
-      {
-        error:
-          "Conversion failed. LibreOffice may not be installed on this server.",
-      },
+      { error: "Conversion failed. Please try a different PDF." },
       { status: 500 },
     );
   } finally {
     await unlink(inputPath).catch(() => {});
     await unlink(outputPath).catch(() => {});
-    await execAsync(`rm -rf "${join(tmpdir(), `${id}-loprofile`)}"`).catch(
-      () => {},
-    );
   }
 }

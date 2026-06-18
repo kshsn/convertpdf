@@ -10,6 +10,9 @@ const execAsync = promisify(exec);
 
 export async function POST(req: NextRequest) {
   const id = randomUUID();
+  const profileDir = join(tmpdir(), `${id}-loprofile`);
+  let inputPath = "";
+  let outputPath = "";
 
   try {
     const form = await req.formData();
@@ -18,15 +21,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "No file provided" }, { status: 400 });
 
     const ext = extname(file.name) || ".docx";
-    const inputPath = join(tmpdir(), `${id}-input${ext}`);
+    inputPath = join(tmpdir(), `${id}-input${ext}`);
     const stem = basename(inputPath, ext);
-    const outputPath = join(tmpdir(), `${stem}.pdf`);
+    outputPath = join(tmpdir(), `${stem}.pdf`);
 
     const bytes = await file.arrayBuffer();
     await writeFile(inputPath, Buffer.from(bytes));
 
     await execAsync(
-      `libreoffice --headless --convert-to pdf "${inputPath}" --outdir "${tmpdir()}"`,
+      `libreoffice -env:UserInstallation=file://${profileDir} --headless --convert-to pdf "${inputPath}" --outdir "${tmpdir()}"`,
     );
 
     const result = await readFile(outputPath);
@@ -45,6 +48,8 @@ export async function POST(req: NextRequest) {
       { status: 500 },
     );
   } finally {
-    // cleanup handled individually above
+    if (inputPath) await unlink(inputPath).catch(() => {});
+    if (outputPath) await unlink(outputPath).catch(() => {});
+    await execAsync(`rm -rf "${profileDir}"`).catch(() => {});
   }
 }

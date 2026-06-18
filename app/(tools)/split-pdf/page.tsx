@@ -79,13 +79,13 @@ export default function SplitPDFPage() {
                 </p>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Page range (optional)
+                    Pages to split (optional)
                   </label>
                   <input
                     type="text"
                     value={pages}
                     onChange={(e) => setPages(e.target.value)}
-                    placeholder="e.g. 1-3, 5, 7-9 (leave empty for all pages)"
+                    placeholder="e.g. 1-3, 5, 7-9 — each page becomes its own PDF (empty = all)"
                     className="w-full border border-gray-300 rounded-xl px-4 py-2 text-sm focus:outline-none focus:border-red-400"
                   />
                 </div>
@@ -116,14 +116,14 @@ export default function SplitPDFPage() {
           <div className="text-center py-12">
             <div className="text-6xl mb-4">✅</div>
             <h2 className="text-xl font-bold text-gray-800 mb-6">
-              Your PDF is ready!
+              Your split files are ready!
             </h2>
             <a
               href={downloadUrl}
-              download="split.pdf"
+              download="split-pages.zip"
               className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-10 rounded-full transition-colors inline-block"
             >
-              Download split.pdf
+              Download ZIP
             </a>
             <div className="mt-8 bg-gray-200 rounded-lg h-24 flex items-center justify-center text-gray-400 text-sm">
               Advertisement
@@ -155,19 +155,19 @@ export default function SplitPDFPage() {
             How to Split PDF Files Online for Free
           </h2>
           <p>
-            Upload your PDF, enter the page range you want to extract, and click
-            Split. Your new PDF will be ready in seconds — no software
-            installation needed.
+            Upload your PDF and click Split. Each page is saved as its own PDF
+            file and bundled into a ZIP for download — no software installation
+            needed.
           </p>
           <div className="mt-4 space-y-3">
             {[
               {
                 q: "How do I split a PDF into individual pages?",
-                a: "Leave the page range empty and click Split — each page will be extracted into the output PDF.",
+                a: "Leave the pages field empty and click Split — every page becomes its own PDF, delivered as a ZIP.",
               },
               {
-                q: "Can I extract specific pages?",
-                a: "Yes. Enter a range like 1-3, 5, 7-9 to extract exactly the pages you need.",
+                q: "Can I split only specific pages?",
+                a: "Yes. Enter a range like 1-3, 5, 7-9 and only those pages will be split into separate files.",
               },
               {
                 q: "Is there a file size limit?",

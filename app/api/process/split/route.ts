@@ -1,6 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { PDFDocument } from "pdf-lib";
-import { PassThrough } from "stream";
+import { writeFile, readFile, unlink, mkdir } from "fs/promises";
+import { createWriteStream } from "fs";
+import { tmpdir } from "os";
+import { join } from "path";
+import { randomUUID } from "crypto";
+import { exec } from "child_process";
+import { promisify } from "util";
+
+const execAsync = promisify(exec);
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const archiver = require("archiver") as (
@@ -22,11 +30,30 @@ function parseRange(pages: string, total: number): number[] {
       indices.push(start);
     }
   }
-  // de-duplicate while keeping order
   return [...new Set(indices)];
 }
 
+function zipDir(
+  files: { path: string; name: string }[],
+  zipPath: string,
+): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const output = createWriteStream(zipPath);
+    const archive = archiver("zip");
+    output.on("close", () => resolve());
+    archive.on("error", reject);
+    archive.pipe(output);
+    for (const f of files) archive.file(f.path, { name: f.name });
+    archive.finalize();
+  });
+}
+
 export async function POST(req: NextRequest) {
+  const id = randomUUID();
+  const workDir = join(tmpdir(), `${id}-split`);
+  const zipPath = join(tmpdir(), `${id}-split.zip`);
+  const created: string[] = [];
+
   try {
     const formData = await req.formData();
     const file = formData.get("file") as File | null;
@@ -50,27 +77,24 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Build one single-page PDF per selected page and bundle into a ZIP.
-    const archive = archiver("zip");
-    const pass = new PassThrough();
-    const chunks: Buffer[] = [];
-    pass.on("data", (c: Buffer) => chunks.push(c));
-    const done = new Promise<Buffer>((resolve, reject) => {
-      pass.on("end", () => resolve(Buffer.concat(chunks)));
-      archive.on("error", reject);
-    });
-    archive.pipe(pass);
+    await mkdir(workDir, { recursive: true });
 
+    const files: { path: string; name: string }[] = [];
     for (const idx of indices) {
       const out = await PDFDocument.create();
       const [copied] = await out.copyPages(source, [idx]);
       out.addPage(copied);
       const bytes = await out.save();
-      archive.append(Buffer.from(bytes), { name: `page-${idx + 1}.pdf` });
+      const name = `page-${idx + 1}.pdf`;
+      const path = join(workDir, name);
+      await writeFile(path, Buffer.from(bytes));
+      created.push(path);
+      files.push({ path, name });
     }
-    await archive.finalize();
 
-    const zipBuffer = await done;
+    await zipDir(files, zipPath);
+    const zipBuffer = await readFile(zipPath);
+
     return new NextResponse(new Uint8Array(zipBuffer), {
       headers: {
         "Content-Type": "application/zip",
@@ -79,5 +103,9 @@ export async function POST(req: NextRequest) {
     });
   } catch {
     return NextResponse.json({ error: "Failed to split PDF" }, { status: 500 });
+  } finally {
+    for (const p of created) await unlink(p).catch(() => {});
+    await unlink(zipPath).catch(() => {});
+    await execAsync(`rm -rf "${workDir}"`).catch(() => {});
   }
 }

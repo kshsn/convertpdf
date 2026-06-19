@@ -24,7 +24,15 @@
     "another": "Weitere Datei verarbeiten",
     "errorGeneric": "Etwas ist schiefgelaufen",
     "advertisement": "Werbung",
-    "selected": "Ausgewählt"
+    "selected": "Ausgewählt",
+    "reorderHint": "{count} Dateien ausgewählt — zum Neuordnen ziehen",
+    "mergeHint": "Fügen Sie mindestens 2 Dateien zum Zusammenführen hinzu",
+    "pagesLabel": "Zu teilende Seiten (optional)",
+    "pagesPlaceholder": "z. B. 1-3, 5, 7-9 — leer lassen für alle Seiten",
+    "angleLabel": "Drehwinkel",
+    "passwordLabel": "Passwort festlegen",
+    "passwordPlaceholder": "Passwort eingeben",
+    "faqTitle": "Häufig gestellte Fragen"
   },
   "tools": {
     "merge-pdf": {

@@ -12,7 +12,21 @@
     "heroTitle": "Ferramentas PDF Online Grátis",
     "heroSubtitle": "Junte, divida, comprima e converta arquivos PDF: 100% grátis, sem cadastro.",
     "allTools": "Todas as ferramentas PDF",
-    "whyTitle": "Por que ConvertPDF?"
+    "whyTitle": "Por que ConvertPDF?",
+    "features": [
+      {
+        "title": "Privado e seguro",
+        "desc": "Os arquivos são excluídos automaticamente após 1 hora."
+      },
+      {
+        "title": "Processamento rápido",
+        "desc": "A maioria dos arquivos é processada em menos de 5 segundos."
+      },
+      {
+        "title": "100% grátis",
+        "desc": "Sem taxas ocultas, sem cadastro, sem marcas d'água."
+      }
+    ]
   },
   "common": {
     "drop": "Solte o arquivo aqui",

@@ -35,6 +35,15 @@ export interface Dictionary {
     errorGeneric: string;
     advertisement: string;
     selected: string;
+    /** "{count} files selected — drag to reorder" ({count} is replaced at runtime) */
+    reorderHint: string;
+    mergeHint: string;
+    pagesLabel: string;
+    pagesPlaceholder: string;
+    angleLabel: string;
+    passwordLabel: string;
+    passwordPlaceholder: string;
+    faqTitle: string;
   };
   tools: Record<string, ToolContent>;
 }

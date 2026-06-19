@@ -52,10 +52,10 @@ export default function AboutPage() {
         <p className="text-gray-600">
           Have feedback or questions?{" "}
           <a
-            href="mailto:support@convertpdf.proailabs.net"
+            href="mailto:kshsna@gmail.com"
             className="text-red-600 hover:underline"
           >
-            support@convertpdf.proailabs.net
+            kshsna@gmail.com
           </a>
         </p>
       </div>

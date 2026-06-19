@@ -1,0 +1,183 @@
+{
+  "nav": { "tools": "Outils", "pricing": "Tarifs", "goPro": "Passer Pro" },
+  "footer": {
+    "tagline": "Outils PDF en ligne gratuits. Rapides, sécurisés et privés.",
+    "tools": "Outils",
+    "company": "Entreprise",
+    "about": "À propos",
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  },
+  "home": {
+    "heroTitle": "Outils PDF en ligne gratuits",
+    "heroSubtitle": "Fusionnez, divisez, compressez et convertissez vos fichiers PDF : 100 % gratuit, sans inscription.",
+    "allTools": "Tous les outils PDF",
+    "whyTitle": "Pourquoi ConvertPDF ?"
+  },
+  "common": {
+    "drop": "Déposez le fichier ici",
+    "dragHere": "Glissez-déposez votre fichier ici",
+    "browse": "ou cliquez pour parcourir",
+    "processing": "Traitement en cours...",
+    "done": "Votre fichier est prêt !",
+    "download": "Télécharger",
+    "another": "Traiter un autre fichier",
+    "errorGeneric": "Une erreur est survenue",
+    "advertisement": "Publicité",
+    "selected": "Sélectionné"
+  },
+  "tools": {
+    "merge-pdf": {
+      "title": "Fusionner PDF",
+      "tagline": "Combinez plusieurs fichiers PDF en un seul document.",
+      "intro": "Importez vos fichiers PDF, réorganisez-les et fusionnez-les en un seul document en quelques secondes, sans installer de logiciel.",
+      "faq": [
+        {
+          "q": "Combien de fichiers puis-je fusionner ?",
+          "a": "Les utilisateurs gratuits peuvent fusionner jusqu'à 2 fichiers à la fois. Les utilisateurs Pro bénéficient d'une fusion par lots illimitée."
+        },
+        {
+          "q": "L'ordre est-il conservé ?",
+          "a": "Oui : vous pouvez réorganiser les fichiers avant la fusion et le PDF final conserve cet ordre."
+        },
+        {
+          "q": "Est-ce gratuit ?",
+          "a": "Oui, entièrement gratuit et sans filigrane."
+        }
+      ]
+    },
+    "split-pdf": {
+      "title": "Diviser PDF",
+      "tagline": "Divisez un PDF en fichiers séparés, un par page.",
+      "intro": "Importez votre PDF et cliquez sur Diviser. Chaque page est enregistrée comme son propre PDF et regroupée dans un ZIP à télécharger.",
+      "faq": [
+        {
+          "q": "Comment diviser un PDF en pages individuelles ?",
+          "a": "Laissez le champ des pages vide et cliquez sur Diviser : chaque page devient son propre PDF, livré sous forme de ZIP."
+        },
+        {
+          "q": "Puis-je diviser uniquement certaines pages ?",
+          "a": "Oui. Saisissez une plage comme 1-3, 5, 7-9 et seules ces pages seront divisées en fichiers séparés."
+        },
+        {
+          "q": "Y a-t-il une limite de taille ?",
+          "a": "Les utilisateurs gratuits peuvent diviser des PDF jusqu'à 10 Mo. Les utilisateurs Pro vont jusqu'à 100 Mo."
+        }
+      ]
+    },
+    "compress-pdf": {
+      "title": "Compresser PDF",
+      "tagline": "Réduisez la taille du PDF sans perte de qualité.",
+      "intro": "Notre compression supprime les données redondantes et optimise les images tout en préservant la lisibilité. La plupart des PDF peuvent être réduits de 30 à 70 %.",
+      "faq": [
+        {
+          "q": "De combien puis-je réduire la taille d'un PDF ?",
+          "a": "Généralement de 30 à 70 % selon le contenu. Les PDF contenant beaucoup d'images se compressent le plus."
+        },
+        {
+          "q": "La compression affecte-t-elle la qualité ?",
+          "a": "Nous utilisons une compression sans perte : le texte et les graphiques vectoriels ne sont pas affectés."
+        },
+        {
+          "q": "Quelle est la taille de fichier maximale ?",
+          "a": "Utilisateurs gratuits : 10 Mo. Utilisateurs Pro : 100 Mo."
+        }
+      ]
+    },
+    "pdf-to-word": {
+      "title": "PDF en Word",
+      "tagline": "Convertissez un PDF en document Word modifiable.",
+      "intro": "Importez votre PDF et nous le convertissons en fichier .docx modifiable. Le texte, les tableaux et la mise en forme de base sont conservés.",
+      "faq": [
+        {
+          "q": "La mise en forme sera-t-elle conservée ?",
+          "a": "La mise en forme de base comme les titres, paragraphes et tableaux est conservée. Les mises en page complexes peuvent nécessiter de légers ajustements."
+        },
+        {
+          "q": "Puis-je modifier le document Word après conversion ?",
+          "a": "Oui : le résultat est un fichier .docx entièrement modifiable, compatible avec Microsoft Word et Google Docs."
+        },
+        {
+          "q": "Y a-t-il une limite de taille ?",
+          "a": "Les utilisateurs gratuits peuvent convertir des PDF jusqu'à 10 Mo. Les utilisateurs Pro vont jusqu'à 100 Mo."
+        }
+      ]
+    },
+    "word-to-pdf": {
+      "title": "Word en PDF",
+      "tagline": "Convertissez des documents Word en PDF instantanément.",
+      "intro": "Importez votre fichier .doc ou .docx et nous le convertissons en un PDF professionnel identique à votre document Word.",
+      "faq": [
+        {
+          "q": "Prend-il en charge .doc et .docx ?",
+          "a": "Oui, les anciens formats .doc et les modernes .docx sont pris en charge."
+        },
+        {
+          "q": "Les polices et les images sont-elles conservées ?",
+          "a": "Oui : le PDF produit respecte la mise en page du document Word, y compris les polices, images et tableaux."
+        },
+        {
+          "q": "Est-ce gratuit ?",
+          "a": "Oui, entièrement gratuit et sans filigrane."
+        }
+      ]
+    },
+    "rotate-pdf": {
+      "title": "Pivoter PDF",
+      "tagline": "Faites pivoter toutes les pages dans la bonne orientation.",
+      "intro": "Importez votre PDF, choisissez une rotation de 90°, 180° ou 270° et téléchargez le fichier corrigé instantanément. Toutes les pages pivotent ensemble.",
+      "faq": [
+        {
+          "q": "Puis-je faire pivoter une seule page ?",
+          "a": "Actuellement, toutes les pages pivotent ensemble. La rotation page par page est disponible avec le plan Pro."
+        },
+        {
+          "q": "La rotation affecte-t-elle la qualité du PDF ?",
+          "a": "Non. La rotation est une modification de métadonnées : la qualité du contenu n'est pas affectée."
+        },
+        {
+          "q": "Est-ce gratuit de faire pivoter des fichiers PDF ?",
+          "a": "Oui, entièrement gratuit et sans limite."
+        }
+      ]
+    },
+    "pdf-to-jpg": {
+      "title": "PDF en JPG",
+      "tagline": "Convertissez chaque page du PDF en image JPG de haute qualité.",
+      "intro": "Importez votre PDF et nous convertissons chaque page en image JPG haute résolution. Toutes les pages sont regroupées dans un ZIP pour un téléchargement facile.",
+      "faq": [
+        {
+          "q": "Quelle est la résolution des images JPG ?",
+          "a": "Les images sont exportées à 150 PPP par défaut, suffisant pour l'écran et l'impression standard."
+        },
+        {
+          "q": "Puis-je convertir une seule page ?",
+          "a": "Importez un PDF d'une seule page ou utilisez d'abord notre outil Diviser PDF pour extraire la page voulue."
+        },
+        {
+          "q": "Est-ce gratuit ?",
+          "a": "Oui, entièrement gratuit et sans filigrane sur les images."
+        }
+      ]
+    },
+    "protect-pdf": {
+      "title": "Protéger PDF",
+      "tagline": "Ajoutez un mot de passe à votre PDF pour empêcher tout accès non autorisé.",
+      "intro": "Importez votre PDF, saisissez un mot de passe et téléchargez le fichier chiffré. Seules les personnes disposant du mot de passe pourront l'ouvrir.",
+      "faq": [
+        {
+          "q": "Quel chiffrement est utilisé ?",
+          "a": "Chiffrement 128 bits, compatible avec tous les lecteurs PDF, y compris Adobe Acrobat."
+        },
+        {
+          "q": "Puis-je retirer le mot de passe plus tard ?",
+          "a": "Oui : utilisez un outil de déverrouillage PDF ou notre prochaine fonction Déverrouiller PDF."
+        },
+        {
+          "q": "Mon fichier est-il sécurisé pendant l'import ?",
+          "a": "Les fichiers sont traités en mémoire et supprimés immédiatement après le téléchargement."
+        }
+      ]
+    }
+  }
+}

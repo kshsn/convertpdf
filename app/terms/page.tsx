@@ -52,10 +52,7 @@ export default function TermsPage() {
 
         <h2>7. Contact</h2>
         <p>
-          Questions?{" "}
-          <a href="mailto:support@convertpdf.proailabs.net">
-            support@convertpdf.proailabs.net
-          </a>
+          Questions? <a href="mailto:kshsna@gmail.com">kshsna@gmail.com</a>
         </p>
       </div>
     </main>

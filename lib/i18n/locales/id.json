@@ -1,0 +1,177 @@
+{
+  "nav": { "tools": "Alat", "pricing": "Harga", "goPro": "Jadi Pro" },
+  "footer": {
+    "tagline": "Alat PDF online gratis. Cepat, aman, dan privat.",
+    "tools": "Alat",
+    "company": "Perusahaan",
+    "about": "Tentang",
+    "privacy": "Privasi",
+    "terms": "Ketentuan"
+  },
+  "home": {
+    "heroTitle": "Alat PDF Online Gratis",
+    "heroSubtitle": "Gabung, pisah, kompres, dan konversi file PDF — 100% gratis, tanpa pendaftaran.",
+    "allTools": "Semua Alat PDF",
+    "whyTitle": "Mengapa ConvertPDF?"
+  },
+  "common": {
+    "drop": "Letakkan file di sini",
+    "dragHere": "Seret & letakkan file Anda di sini",
+    "browse": "atau klik untuk menelusuri",
+    "processing": "Memproses...",
+    "done": "File Anda sudah siap!",
+    "download": "Unduh",
+    "another": "Proses file lain",
+    "errorGeneric": "Terjadi kesalahan",
+    "advertisement": "Iklan",
+    "selected": "Dipilih"
+  },
+  "tools": {
+    "merge-pdf": {
+      "title": "Gabung PDF",
+      "tagline": "Gabungkan beberapa file PDF menjadi satu dokumen.",
+      "intro": "Unggah file PDF Anda, atur ulang urutannya, dan gabungkan menjadi satu dokumen dalam hitungan detik — tanpa instalasi perangkat lunak.",
+      "faq": [
+        {
+          "q": "Berapa banyak file yang bisa saya gabungkan?",
+          "a": "Pengguna gratis dapat menggabungkan hingga 2 file sekaligus. Pengguna Pro mendapatkan penggabungan batch tanpa batas."
+        },
+        {
+          "q": "Apakah urutannya dipertahankan?",
+          "a": "Ya — Anda dapat mengatur ulang file sebelum menggabungkan, dan PDF akhir mempertahankan urutan tersebut."
+        },
+        { "q": "Apakah gratis?", "a": "Ya, sepenuhnya gratis tanpa tanda air." }
+      ]
+    },
+    "split-pdf": {
+      "title": "Pisah PDF",
+      "tagline": "Pisahkan PDF menjadi beberapa file terpisah, satu per halaman.",
+      "intro": "Unggah PDF Anda dan klik Pisah. Setiap halaman disimpan sebagai PDF tersendiri dan dibundel dalam ZIP untuk diunduh.",
+      "faq": [
+        {
+          "q": "Bagaimana cara memisah PDF menjadi halaman individu?",
+          "a": "Biarkan kolom halaman kosong dan klik Pisah — setiap halaman menjadi PDF tersendiri, dikirim sebagai ZIP."
+        },
+        {
+          "q": "Bisakah saya memisah hanya halaman tertentu?",
+          "a": "Ya. Masukkan rentang seperti 1-3, 5, 7-9 dan hanya halaman tersebut yang dipisah menjadi file terpisah."
+        },
+        {
+          "q": "Apakah ada batas ukuran file?",
+          "a": "Pengguna gratis dapat memisah PDF hingga 10MB. Pengguna Pro hingga 100MB."
+        }
+      ]
+    },
+    "compress-pdf": {
+      "title": "Kompres PDF",
+      "tagline": "Kurangi ukuran file PDF tanpa menurunkan kualitas.",
+      "intro": "Kompresi kami menghapus data berlebih dan mengoptimalkan gambar sambil menjaga keterbacaan. Sebagian besar PDF dapat dikecilkan 30–70%.",
+      "faq": [
+        {
+          "q": "Seberapa besar saya bisa mengurangi ukuran file PDF?",
+          "a": "Biasanya 30–70% tergantung kontennya. PDF dengan banyak gambar paling banyak terkompresi."
+        },
+        {
+          "q": "Apakah kompresi memengaruhi kualitas?",
+          "a": "Kami menggunakan kompresi tanpa kehilangan — teks dan grafik vektor tidak terpengaruh."
+        },
+        {
+          "q": "Berapa ukuran file maksimum?",
+          "a": "Pengguna gratis: 10MB. Pengguna Pro: 100MB."
+        }
+      ]
+    },
+    "pdf-to-word": {
+      "title": "PDF ke Word",
+      "tagline": "Konversi PDF menjadi dokumen Word yang dapat diedit.",
+      "intro": "Unggah PDF Anda dan kami mengonversinya menjadi file .docx yang dapat diedit. Teks, tabel, dan format dasar dipertahankan.",
+      "faq": [
+        {
+          "q": "Apakah formatnya akan dipertahankan?",
+          "a": "Format dasar seperti judul, paragraf, dan tabel dipertahankan. Tata letak kompleks mungkin perlu sedikit penyesuaian."
+        },
+        {
+          "q": "Bisakah saya mengedit dokumen Word setelah konversi?",
+          "a": "Ya — hasilnya adalah file .docx yang sepenuhnya dapat diedit, kompatibel dengan Microsoft Word dan Google Docs."
+        },
+        {
+          "q": "Apakah ada batas ukuran file?",
+          "a": "Pengguna gratis dapat mengonversi PDF hingga 10MB. Pengguna Pro hingga 100MB."
+        }
+      ]
+    },
+    "word-to-pdf": {
+      "title": "Word ke PDF",
+      "tagline": "Konversi dokumen Word ke PDF secara instan.",
+      "intro": "Unggah file .doc atau .docx Anda dan kami mengonversinya menjadi PDF profesional yang tampak persis seperti dokumen Word Anda.",
+      "faq": [
+        {
+          "q": "Apakah mendukung .doc dan .docx?",
+          "a": "Ya, baik format lama .doc maupun .docx modern didukung."
+        },
+        {
+          "q": "Apakah font dan gambar dipertahankan?",
+          "a": "Ya — PDF yang dihasilkan sesuai dengan tata letak dokumen Word termasuk font, gambar, dan tabel."
+        },
+        { "q": "Apakah gratis?", "a": "Ya, sepenuhnya gratis tanpa tanda air." }
+      ]
+    },
+    "rotate-pdf": {
+      "title": "Putar PDF",
+      "tagline": "Putar semua halaman ke orientasi yang benar.",
+      "intro": "Unggah PDF Anda, pilih rotasi 90°, 180°, atau 270°, dan unduh file yang sudah diperbaiki secara instan. Semua halaman diputar bersamaan.",
+      "faq": [
+        {
+          "q": "Bisakah saya memutar hanya satu halaman?",
+          "a": "Saat ini semua halaman diputar bersamaan. Rotasi per halaman tersedia pada paket Pro."
+        },
+        {
+          "q": "Apakah memutar memengaruhi kualitas PDF?",
+          "a": "Tidak. Rotasi adalah perubahan metadata — kualitas konten tidak terpengaruh."
+        },
+        {
+          "q": "Apakah gratis memutar file PDF?",
+          "a": "Ya, sepenuhnya gratis tanpa batas."
+        }
+      ]
+    },
+    "pdf-to-jpg": {
+      "title": "PDF ke JPG",
+      "tagline": "Konversi setiap halaman PDF menjadi gambar JPG berkualitas tinggi.",
+      "intro": "Unggah PDF Anda dan kami mengonversi setiap halaman menjadi gambar JPG beresolusi tinggi. Semua halaman dibundel dalam ZIP agar mudah diunduh.",
+      "faq": [
+        {
+          "q": "Berapa resolusi gambar JPG-nya?",
+          "a": "Gambar diekspor pada 150 DPI secara default — cukup tinggi untuk layar dan pencetakan standar."
+        },
+        {
+          "q": "Bisakah saya mengonversi hanya satu halaman?",
+          "a": "Unggah PDF satu halaman atau gunakan alat Pisah PDF kami terlebih dahulu untuk mengambil halaman yang Anda butuhkan."
+        },
+        {
+          "q": "Apakah gratis?",
+          "a": "Ya, sepenuhnya gratis tanpa tanda air pada gambar."
+        }
+      ]
+    },
+    "protect-pdf": {
+      "title": "Lindungi PDF",
+      "tagline": "Tambahkan kata sandi ke PDF Anda untuk mencegah akses tidak sah.",
+      "intro": "Unggah PDF Anda, masukkan kata sandi, dan unduh file terenkripsi. Hanya orang dengan kata sandi yang dapat membukanya.",
+      "faq": [
+        {
+          "q": "Enkripsi apa yang digunakan?",
+          "a": "Enkripsi 128-bit — kompatibel dengan semua pembaca PDF termasuk Adobe Acrobat."
+        },
+        {
+          "q": "Bisakah saya menghapus kata sandi nanti?",
+          "a": "Ya — gunakan alat buka kunci PDF atau fitur Buka Kunci PDF kami yang akan datang."
+        },
+        {
+          "q": "Apakah file saya aman selama pengunggahan?",
+          "a": "File diproses di memori dan dihapus segera setelah diunduh."
+        }
+      ]
+    }
+  }
+}

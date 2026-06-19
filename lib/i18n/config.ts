@@ -24,6 +24,16 @@ export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);
 }
 
+// Build a path for a given locale. English (default) stays unprefixed at the
+// root so existing indexed URLs never change; other locales get a /<locale>
+// prefix. `path` is the locale-independent path, e.g. "" (home) or "merge-pdf".
+export function localizedPath(locale: Locale, path = ""): string {
+  const clean = path.replace(/^\/+/, "");
+  const base = locale === defaultLocale ? "" : `/${locale}`;
+  if (!clean) return base || "/";
+  return `${base}/${clean}`;
+}
+
 // Human-readable names (shown in the language switcher, in each language).
 export const localeNames: Record<Locale, string> = {
   en: "English",

@@ -103,12 +103,8 @@ export async function POST(req: NextRequest) {
         "Content-Disposition": 'attachment; filename="split-pages.zip"',
       },
     });
-  } catch (e) {
-    const detail = e instanceof Error ? e.message : String(e);
-    return NextResponse.json(
-      { error: `Failed to split PDF: ${detail}` },
-      { status: 500 },
-    );
+  } catch {
+    return NextResponse.json({ error: "Failed to split PDF" }, { status: 500 });
   } finally {
     for (const p of created) await unlink(p).catch(() => {});
     await unlink(zipPath).catch(() => {});

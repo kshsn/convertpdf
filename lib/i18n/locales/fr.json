@@ -24,7 +24,15 @@
     "another": "Traiter un autre fichier",
     "errorGeneric": "Une erreur est survenue",
     "advertisement": "Publicité",
-    "selected": "Sélectionné"
+    "selected": "Sélectionné",
+    "reorderHint": "{count} fichiers sélectionnés — glissez pour réorganiser",
+    "mergeHint": "Ajoutez au moins 2 fichiers à fusionner",
+    "pagesLabel": "Pages à diviser (facultatif)",
+    "pagesPlaceholder": "ex. 1-3, 5, 7-9 — laissez vide pour toutes les pages",
+    "angleLabel": "Angle de rotation",
+    "passwordLabel": "Définir un mot de passe",
+    "passwordPlaceholder": "Saisissez le mot de passe",
+    "faqTitle": "Questions fréquentes"
   },
   "tools": {
     "merge-pdf": {

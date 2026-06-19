@@ -48,21 +48,6 @@ export const PLANS: PlanTier[] = [
       "Priority processing",
     ],
   },
-  {
-    id: "business",
-    name: "Business",
-    tagline: "For teams & developers",
-    priceMonthly: 19.99,
-    priceAnnual: 149.99,
-    highlighted: false,
-    cta: "Get Business",
-    features: [
-      "Everything in Pro",
-      "Up to 500 MB per file",
-      "API access",
-      "Priority support queue",
-    ],
-  },
 ];
 
 // Resolve the Paddle price ID for a given tier + billing cycle.

@@ -63,9 +63,10 @@ export async function POST(req: NextRequest) {
         "Content-Disposition": 'attachment; filename="pages.zip"',
       },
     });
-  } catch {
+  } catch (e) {
+    const detail = e instanceof Error ? e.message : String(e);
     return NextResponse.json(
-      { error: "Conversion failed. Ghostscript may not be installed." },
+      { error: `Conversion failed: ${detail}` },
       { status: 500 },
     );
   } finally {

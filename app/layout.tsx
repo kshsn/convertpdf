@@ -3,6 +3,8 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Analytics from "@/components/Analytics";
+import AdSenseScript from "@/components/AdSenseScript";
 import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -77,6 +79,8 @@ export default function RootLayout({
         <Navbar />
         <div className="flex-1">{children}</div>
         <Footer />
+        <Analytics />
+        <AdSenseScript />
       </body>
     </html>
   );

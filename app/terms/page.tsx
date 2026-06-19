@@ -12,8 +12,8 @@ export default function TermsPage() {
 
         <h2>1. Acceptance</h2>
         <p>
-          By using ConvertPDF at convertpdf.proailabs.net, you agree to these
-          terms. If you do not agree, do not use the service.
+          By using ConvertPDF at proailabs.net, you agree to these terms. If you
+          do not agree, do not use the service.
         </p>
 
         <h2>2. Permitted Use</h2>

@@ -12,7 +12,21 @@
     "heroTitle": "Outils PDF en ligne gratuits",
     "heroSubtitle": "Fusionnez, divisez, compressez et convertissez vos fichiers PDF : 100 % gratuit, sans inscription.",
     "allTools": "Tous les outils PDF",
-    "whyTitle": "Pourquoi ConvertPDF ?"
+    "whyTitle": "Pourquoi ConvertPDF ?",
+    "features": [
+      {
+        "title": "Privé et sécurisé",
+        "desc": "Les fichiers sont supprimés automatiquement après 1 heure."
+      },
+      {
+        "title": "Traitement rapide",
+        "desc": "La plupart des fichiers sont traités en moins de 5 secondes."
+      },
+      {
+        "title": "100 % gratuit",
+        "desc": "Sans frais cachés, sans inscription, sans filigrane."
+      }
+    ]
   },
   "common": {
     "drop": "Déposez le fichier ici",

@@ -56,6 +56,26 @@ pip3 install pdf2docx
 - ⚠️ `NEXT_PUBLIC_*` env vars are **baked in at build time** — set `.env` *before* `npm run
   build`, and **rebuild** (not just restart) whenever they change.
 
+### Deploy gotchas (the VPS is dual-stack + multi-app)
+- **Staging on the same box:** run a second instance under its own PM2 name on a *free* port
+  — don't assume 3001 is open (other apps grab it). Find a free one with
+  `ss -ltnH | awk '{print $4}' | sed 's/.*://' | sort -u`, then `PORT=<free> pm2 start npm
+  --name <app>-staging -- start`. The live app stays on 3000, untouched. Validate via
+  `curl localhost:<port>` before promoting.
+- **IPv6 / nginx (cost an hour to diagnose):** `listen 443 ssl;` binds **IPv4 only**. On a
+  dual-stack VPS, a per-host redirect or vhost *without* `listen [::]:443 ssl;` is silently
+  bypassed for IPv6 clients — the request falls through to the default IPv6 server (usually
+  the app → 200) and your redirect "doesn't work" even though `nginx -T` shows it. Always pair
+  `listen 443 ssl;` **with** `listen [::]:443 ssl;` (and `listen 80; listen [::]:80;`).
+  Diagnose with `curl -4` vs `curl -6`; `--resolve host:443:127.0.0.1` tests the box directly.
+- **Domain / host migration (subdomain → apex, or any host change):** change **`SITE_URL` in
+  `lib/seo.ts` only** — it drives canonical, hreflang, sitemap, robots, OG, and JSON-LD in one
+  place. Then 301 the old host in a *dedicated* nginx `server` block that keeps the certbot
+  SSL lines and redirects **both ports and both IP stacks**:
+  `return 301 https://<apex>$request_uri;`. Add the new host as its own GSC property and keep
+  the old one to watch the move (no "Change of Address" tool needed for subdomain→apex).
+  Certbot still renews the old cert via its nginx plugin even though the block only redirects.
+
 ---
 
 ## Phase 3 — SEO foundation (no external accounts needed)
@@ -99,6 +119,12 @@ pip3 install pdf2docx
   verify → passes.
 - After verify: complete the **CMP consent message** (choose Google CMP, **3-choice** for GDPR),
   then **Request review**. Approval: days–2 weeks. Don't buy paid traffic during review.
+- **ads.txt "Not found" after adding the site = crawl lag, not breakage.** If
+  `https://<apex>/ads.txt` already returns the valid `google.com, pub-<id>, DIRECT, f08c47fec0942fa0`
+  line, you're done — Google re-reads it on its own schedule (1–3 days; the site's "Last
+  updated" timestamp stays frozen until it does). Don't keep editing/resubmitting. The only
+  real failure mode is a pub-id mismatch — confirm it matches **Account → Settings → Publisher
+  ID** before assuming a problem.
 
 ## Phase 7 — Paddle (Pro subscriptions)
 
@@ -118,6 +144,40 @@ pip3 install pdf2docx
 - Reddit/Quora (answer real questions), AlternativeTo listing, Product Hunt launch day.
 - SEO is the long-term engine; social gives spikes.
 
+## Phase 9 — Internationalization (multi-language SEO)
+
+Goal: rank in N languages **without breaking the indexed English URLs**. Proven on ConvertPDF
+(8 locales: en, ar, es, fr, pt, de, hi, id).
+
+- **URL strategy:** English stays at the **root** (`/merge-pdf`, unchanged/already indexed);
+  other locales are **path-prefixed** (`/ar/merge-pdf`). Never move English under `/en` — keep
+  it canonical at root; `/en/*` should 404.
+- **Dictionaries:** `lib/i18n/config.ts` (locales, defaultLocale, rtlLocales, `localizedPath`,
+  `localeNames`) + `lib/i18n/dictionaries.ts` (`server-only` loader, falls back to en) + one
+  `lib/i18n/locales/<locale>.json` per language with the **same key shape** (validate shapes
+  match before building).
+- **Shared, dictionary-driven components:** extract the tool widgets once
+  (`components/tools/*`, client) + a server `ToolPage` shell (title/intro/FAQ from the dict),
+  so English-at-root and `/[locale]` reuse the same logic. **Never duplicate tool logic.**
+- **Routing (parallel tree — lowest risk to English):** keep English routes in place; add
+  `app/[locale]/` with `layout.tsx` (validate locale, `generateStaticParams` for the
+  non-default locales, `dynamicParams = false` so unknown locales + `/en` 404) and
+  `app/[locale]/[tool]/page.tsx` for tools.
+- **RTL / lang:** the root `<html lang="en">` is owned by the root layout and can't vary per
+  route — set `lang`/`dir` on the `[locale]` content **wrapper** + on Navbar/Footer (`dir` via
+  a `useCurrentLocale` hook). Good enough; page language is also conveyed by hreflang.
+- **hreflang:** one helper (`localeAlternates(locale, path)` built off `SITE_URL`) emits
+  `alternates.canonical` + every locale + `x-default`, on **both** root-English and `/[locale]`
+  pages (must be reciprocal + each self-canonical). The sitemap emits every localized URL with
+  that same alternates map.
+- **Chrome:** locale-aware Navbar/Footer (locale-prefixed tool/home links; untranslated
+  legal/pricing pages can point at the English root) + a `LanguageSwitcher` using `localeNames`.
+- **Ship safely:** the loader imports every locale file, so the build is **red until all
+  dictionaries exist** — add them first. `npm run build` after each step; verify prerendered
+  HTML (`grep` `.next/server/app/**/*.html` for canonical / hreflang / `lang` / `dir`).
+- **RPM reality:** new locales are mostly *volume*, not revenue — en/de/fr carry RPM ($15–35),
+  hi/id/pt are $1–3 (see benchmarks below).
+
 ## Monetization model
 
 | Plan | Price | Notes |
@@ -128,3 +188,20 @@ pip3 install pdf2docx
 
 Primary revenue = **AdSense on free traffic**. Pro is secondary. Google Search Ads only
 for annual-Pro conversions (high LTV), never AdSense arbitrage.
+
+### 2026 benchmarks & growth levers (full notes in the `monetization-seo-playbook` memory)
+
+- **AdSense RPM:** ~$2–10 typical; US $15–35, IN $1–3; finance/legal $15–50+. CPM-based now
+  (~68–80% rev share). Best layout = Auto Ads + 2–3 manual units.
+- **Ad-network upgrade ladder** (higher RPM than bare AdSense as traffic grows): Ezoic
+  (~3k/mo) → Journey by Mediavine (1k sessions) → Monumetric Propel (10k pageviews) → Raptive
+  (25k visits) → Mediavine ($5k/yr ad earnings). Move up once traffic supports it.
+- **AdSense "low value content" trap for tool sites:** a page that's mostly UI gets rejected —
+  every tool page needs real text (intro + how-to + FAQ, ~1,500 words). The `ToolPage` shell
+  already provides this; don't ship bare widgets.
+- **Core Web Vitals 2026** (75th-percentile field data): LCP <2.5s, **INP <200ms** (most-failed
+  metric — break long JS tasks), CLS <0.1. **Give every ad slot a fixed reserved height** or
+  ads cause CLS.
+- **Payments:** Paddle (and Lemon Squeezy) = 5% + $0.50, **Merchant-of-Record** (handles global
+  VAT/sales-tax) — the right call for multi-country tool sites. Stripe is cheaper headline
+  (2.9% + 30¢) but you owe tax compliance everywhere. Under ~$50k/yr, MoR wins end-to-end.

@@ -24,7 +24,15 @@
     "another": "दूसरी फ़ाइल प्रोसेस करें",
     "errorGeneric": "कुछ गड़बड़ हो गई",
     "advertisement": "विज्ञापन",
-    "selected": "चयनित"
+    "selected": "चयनित",
+    "reorderHint": "{count} फ़ाइलें चयनित — पुनः क्रमित करने के लिए खींचें",
+    "mergeHint": "मर्ज करने के लिए कम से कम 2 फ़ाइलें जोड़ें",
+    "pagesLabel": "विभाजित करने के लिए पृष्ठ (वैकल्पिक)",
+    "pagesPlaceholder": "जैसे 1-3, 5, 7-9 — सभी पृष्ठों के लिए खाली छोड़ें",
+    "angleLabel": "घुमाव कोण",
+    "passwordLabel": "पासवर्ड सेट करें",
+    "passwordPlaceholder": "पासवर्ड दर्ज करें",
+    "faqTitle": "अक्सर पूछे जाने वाले प्रश्न"
   },
   "tools": {
     "merge-pdf": {

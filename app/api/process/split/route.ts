@@ -7,13 +7,12 @@ import { join } from "path";
 import { randomUUID } from "crypto";
 import { exec } from "child_process";
 import { promisify } from "util";
+import type { Archiver } from "archiver";
 
 const execAsync = promisify(exec);
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const archiver = require("archiver") as (
-  format: string,
-) => import("archiver").Archiver;
+const archiverLib: { create(format: string): Archiver } = require("archiver");
 
 function parseRange(pages: string, total: number): number[] {
   const indices: number[] = [];
@@ -39,7 +38,7 @@ function zipDir(
 ): Promise<void> {
   return new Promise((resolve, reject) => {
     const output = createWriteStream(zipPath);
-    const archive = archiver("zip");
+    const archive = archiverLib.create("zip");
     output.on("close", () => resolve());
     archive.on("error", reject);
     archive.pipe(output);

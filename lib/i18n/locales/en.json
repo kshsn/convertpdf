@@ -24,7 +24,15 @@
     "another": "Process another file",
     "errorGeneric": "Something went wrong",
     "advertisement": "Advertisement",
-    "selected": "Selected"
+    "selected": "Selected",
+    "reorderHint": "{count} files selected — drag to reorder",
+    "mergeHint": "Add at least 2 files to merge",
+    "pagesLabel": "Pages to split (optional)",
+    "pagesPlaceholder": "e.g. 1-3, 5, 7-9 — leave empty for every page",
+    "angleLabel": "Rotation angle",
+    "passwordLabel": "Set a password",
+    "passwordPlaceholder": "Enter password",
+    "faqTitle": "Frequently Asked Questions"
   },
   "tools": {
     "merge-pdf": {

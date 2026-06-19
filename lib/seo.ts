@@ -6,7 +6,7 @@ import {
   localizedPath,
 } from "@/lib/i18n/config";
 
-export const SITE_URL = "https://convertpdf.proailabs.net";
+export const SITE_URL = "https://proailabs.net";
 export const SITE_NAME = "ConvertPDF";
 
 /** Absolute URL for a locale-independent path, e.g. absolute("merge-pdf"). */

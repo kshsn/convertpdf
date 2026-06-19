@@ -12,7 +12,21 @@
     "heroTitle": "Kostenlose Online-PDF-Tools",
     "heroSubtitle": "PDF-Dateien zusammenführen, teilen, komprimieren und konvertieren – 100 % kostenlos, ohne Anmeldung.",
     "allTools": "Alle PDF-Tools",
-    "whyTitle": "Warum ConvertPDF?"
+    "whyTitle": "Warum ConvertPDF?",
+    "features": [
+      {
+        "title": "Privat & sicher",
+        "desc": "Dateien werden nach 1 Stunde automatisch gelöscht."
+      },
+      {
+        "title": "Schnelle Verarbeitung",
+        "desc": "Die meisten Dateien werden in unter 5 Sekunden verarbeitet."
+      },
+      {
+        "title": "100 % kostenlos",
+        "desc": "Keine versteckten Gebühren, keine Anmeldung, keine Wasserzeichen."
+      }
+    ]
   },
   "common": {
     "drop": "Datei hier ablegen",

@@ -23,6 +23,7 @@ export interface Dictionary {
     heroSubtitle: string;
     allTools: string;
     whyTitle: string;
+    features: { title: string; desc: string }[];
   };
   common: {
     drop: string;

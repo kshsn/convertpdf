@@ -12,7 +12,21 @@
     "heroTitle": "Alat PDF Online Gratis",
     "heroSubtitle": "Gabung, pisah, kompres, dan konversi file PDF — 100% gratis, tanpa pendaftaran.",
     "allTools": "Semua Alat PDF",
-    "whyTitle": "Mengapa ConvertPDF?"
+    "whyTitle": "Mengapa ConvertPDF?",
+    "features": [
+      {
+        "title": "Privat & aman",
+        "desc": "File dihapus otomatis setelah 1 jam."
+      },
+      {
+        "title": "Pemrosesan cepat",
+        "desc": "Sebagian besar file diproses dalam kurang dari 5 detik."
+      },
+      {
+        "title": "100% gratis",
+        "desc": "Tanpa biaya tersembunyi, tanpa pendaftaran, tanpa tanda air."
+      }
+    ]
   },
   "common": {
     "drop": "Letakkan file di sini",

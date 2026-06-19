@@ -12,7 +12,10 @@ import type { Archiver } from "archiver";
 const execAsync = promisify(exec);
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const archiverLib: { create(format: string): Archiver } = require("archiver");
+const archiverModule = require("archiver");
+const archiverFn = (archiverModule.default ?? archiverModule) as (
+  format: string,
+) => Archiver;
 
 function parseRange(pages: string, total: number): number[] {
   const indices: number[] = [];
@@ -38,7 +41,7 @@ function zipDir(
 ): Promise<void> {
   return new Promise((resolve, reject) => {
     const output = createWriteStream(zipPath);
-    const archive = archiverLib.create("zip");
+    const archive = archiverFn("zip");
     output.on("close", () => resolve());
     archive.on("error", reject);
     archive.pipe(output);

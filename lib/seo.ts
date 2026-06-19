@@ -48,7 +48,10 @@ export function buildMetadata({ title, description, path }: PageSeo): Metadata {
   const url = absoluteUrl(path);
   const fullTitle = `${title} — Free Online | ${SITE_NAME}`;
   return {
-    title: fullTitle,
+    // `absolute` bypasses the root layout's `%s | ConvertPDF` title template,
+    // which would otherwise append the brand name a second time since
+    // `fullTitle` already ends in "| ConvertPDF".
+    title: { absolute: fullTitle },
     description,
     alternates: localeAlternates(defaultLocale, path),
     openGraph: {

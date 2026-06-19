@@ -58,3 +58,16 @@ export const TOOLS = [
 ] as const;
 
 export type ToolSlug = (typeof TOOLS)[number]["slug"];
+
+// Every tool that has a page, including protect-pdf (which is not in the home
+// grid). Used to generate localized routes and validate /[locale]/[tool].
+export const ALL_TOOL_SLUGS = [
+  "merge-pdf",
+  "split-pdf",
+  "compress-pdf",
+  "pdf-to-word",
+  "word-to-pdf",
+  "rotate-pdf",
+  "pdf-to-jpg",
+  "protect-pdf",
+] as const;

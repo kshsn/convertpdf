@@ -1,19 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { localizedPath } from "@/lib/i18n/config";
+import { localizedPath, isRtl } from "@/lib/i18n/config";
 import { chrome } from "@/lib/i18n/chrome";
 import { useCurrentLocale } from "@/lib/i18n/useCurrentLocale";
 
 const PRIMARY_TOOLS = ["merge-pdf", "split-pdf", "compress-pdf", "pdf-to-word"];
 const MORE_TOOLS = ["word-to-pdf", "rotate-pdf", "pdf-to-jpg", "protect-pdf"];
 
+// Company/legal links point at the English root pages (not translated).
 export default function Footer() {
   const locale = useCurrentLocale();
   const t = chrome[locale].footer;
 
   return (
-    <footer className="bg-gray-900 text-gray-400 py-10 px-4 mt-16">
+    <footer
+      dir={isRtl(locale) ? "rtl" : "ltr"}
+      className="bg-gray-900 text-gray-400 py-10 px-4 mt-16"
+    >
       <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
         <div>
           <p className="text-white font-bold text-base mb-3">ConvertPDF</p>
@@ -53,14 +57,14 @@ export default function Footer() {
           <p className="text-white font-semibold mb-3">{t.company}</p>
           <ul className="space-y-2">
             {[
-              { label: t.about, path: "about" },
-              { label: t.pricing, path: "pricing" },
-              { label: t.privacy, path: "privacy" },
-              { label: t.terms, path: "terms" },
+              { label: t.about, href: "/about" },
+              { label: t.pricing, href: "/pricing" },
+              { label: t.privacy, href: "/privacy" },
+              { label: t.terms, href: "/terms" },
             ].map((l) => (
-              <li key={l.path}>
+              <li key={l.href}>
                 <Link
-                  href={localizedPath(locale, l.path)}
+                  href={l.href}
                   className="hover:text-white transition-colors"
                 >
                   {l.label}

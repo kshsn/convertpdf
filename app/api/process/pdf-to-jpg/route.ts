@@ -66,10 +66,9 @@ export async function POST(req: NextRequest) {
         "Content-Disposition": 'attachment; filename="pages.zip"',
       },
     });
-  } catch (e) {
-    const detail = e instanceof Error ? e.message : String(e);
+  } catch {
     return NextResponse.json(
-      { error: `Conversion failed: ${detail}` },
+      { error: "Conversion failed. Please try a different PDF." },
       { status: 500 },
     );
   } finally {

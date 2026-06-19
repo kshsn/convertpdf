@@ -1,10 +1,11 @@
 import PricingPlans from "@/components/PricingPlans";
+import { absoluteUrl } from "@/lib/seo";
 
 export const metadata = {
   title: "Pricing — ConvertPDF Pro & Business Plans",
   description:
     "Simple pricing for ConvertPDF. Start free, upgrade to Pro for larger files and no ads, or Business for API access. Cancel anytime.",
-  alternates: { canonical: "https://convertpdf.proailabs.net/pricing" },
+  alternates: { canonical: absoluteUrl("pricing") },
 };
 
 export default function PricingPage() {

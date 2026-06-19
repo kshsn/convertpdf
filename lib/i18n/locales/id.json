@@ -24,7 +24,15 @@
     "another": "Proses file lain",
     "errorGeneric": "Terjadi kesalahan",
     "advertisement": "Iklan",
-    "selected": "Dipilih"
+    "selected": "Dipilih",
+    "reorderHint": "{count} file dipilih — seret untuk menyusun ulang",
+    "mergeHint": "Tambahkan minimal 2 file untuk digabung",
+    "pagesLabel": "Halaman untuk dipisah (opsional)",
+    "pagesPlaceholder": "mis. 1-3, 5, 7-9 — kosongkan untuk semua halaman",
+    "angleLabel": "Sudut rotasi",
+    "passwordLabel": "Atur kata sandi",
+    "passwordPlaceholder": "Masukkan kata sandi",
+    "faqTitle": "Pertanyaan yang sering diajukan"
   },
   "tools": {
     "merge-pdf": {

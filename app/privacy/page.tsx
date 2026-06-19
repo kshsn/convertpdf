@@ -45,10 +45,7 @@ export default function PrivacyPage() {
         <p>
           You may request deletion of your account and associated data at any
           time by emailing us at{" "}
-          <a href="mailto:support@convertpdf.proailabs.net">
-            support@convertpdf.proailabs.net
-          </a>
-          .
+          <a href="mailto:kshsna@gmail.com">kshsna@gmail.com</a>.
         </p>
 
         <h2>6. Changes</h2>

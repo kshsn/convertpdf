@@ -12,7 +12,21 @@
     "heroTitle": "Free Online PDF Tools",
     "heroSubtitle": "Merge, split, compress, and convert PDF files — 100% free, no signup required.",
     "allTools": "All PDF Tools",
-    "whyTitle": "Why ConvertPDF?"
+    "whyTitle": "Why ConvertPDF?",
+    "features": [
+      {
+        "title": "Private & Secure",
+        "desc": "Files are deleted automatically after 1 hour."
+      },
+      {
+        "title": "Fast Processing",
+        "desc": "Most files processed in under 5 seconds."
+      },
+      {
+        "title": "100% Free",
+        "desc": "No hidden fees, no signup, no watermarks."
+      }
+    ]
   },
   "common": {
     "drop": "Drop file here",

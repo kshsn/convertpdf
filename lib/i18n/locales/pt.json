@@ -1,0 +1,177 @@
+{
+  "nav": { "tools": "Ferramentas", "pricing": "Preços", "goPro": "Seja Pro" },
+  "footer": {
+    "tagline": "Ferramentas PDF online gratuitas. Rápidas, seguras e privadas.",
+    "tools": "Ferramentas",
+    "company": "Empresa",
+    "about": "Sobre",
+    "privacy": "Privacidade",
+    "terms": "Termos"
+  },
+  "home": {
+    "heroTitle": "Ferramentas PDF Online Grátis",
+    "heroSubtitle": "Junte, divida, comprima e converta arquivos PDF: 100% grátis, sem cadastro.",
+    "allTools": "Todas as ferramentas PDF",
+    "whyTitle": "Por que ConvertPDF?"
+  },
+  "common": {
+    "drop": "Solte o arquivo aqui",
+    "dragHere": "Arraste e solte seu arquivo aqui",
+    "browse": "ou clique para procurar",
+    "processing": "Processando...",
+    "done": "Seu arquivo está pronto!",
+    "download": "Baixar",
+    "another": "Processar outro arquivo",
+    "errorGeneric": "Algo deu errado",
+    "advertisement": "Publicidade",
+    "selected": "Selecionado"
+  },
+  "tools": {
+    "merge-pdf": {
+      "title": "Juntar PDF",
+      "tagline": "Combine vários arquivos PDF em um único documento.",
+      "intro": "Envie seus arquivos PDF, reordene-os e junte-os em um único documento em segundos, sem instalar nenhum software.",
+      "faq": [
+        {
+          "q": "Quantos arquivos posso juntar?",
+          "a": "Usuários gratuitos podem juntar até 2 arquivos por vez. Usuários Pro têm junção em lote ilimitada."
+        },
+        {
+          "q": "A ordem é mantida?",
+          "a": "Sim: você pode reordenar os arquivos antes de juntar, e o PDF final mantém essa ordem."
+        },
+        { "q": "É grátis?", "a": "Sim, totalmente grátis e sem marcas d'água." }
+      ]
+    },
+    "split-pdf": {
+      "title": "Dividir PDF",
+      "tagline": "Divida um PDF em arquivos separados, um por página.",
+      "intro": "Envie seu PDF e clique em Dividir. Cada página é salva como seu próprio PDF e reunida em um ZIP para download.",
+      "faq": [
+        {
+          "q": "Como divido um PDF em páginas individuais?",
+          "a": "Deixe o campo de páginas vazio e clique em Dividir: cada página vira seu próprio PDF, entregue como ZIP."
+        },
+        {
+          "q": "Posso dividir apenas páginas específicas?",
+          "a": "Sim. Informe um intervalo como 1-3, 5, 7-9 e apenas essas páginas serão divididas em arquivos separados."
+        },
+        {
+          "q": "Há limite de tamanho de arquivo?",
+          "a": "Usuários gratuitos podem dividir PDFs de até 10 MB. Usuários Pro chegam a 100 MB."
+        }
+      ]
+    },
+    "compress-pdf": {
+      "title": "Comprimir PDF",
+      "tagline": "Reduza o tamanho do PDF sem perder qualidade.",
+      "intro": "Nossa compressão remove dados redundantes e otimiza imagens preservando a legibilidade. A maioria dos PDFs pode ser reduzida em 30 a 70%.",
+      "faq": [
+        {
+          "q": "Quanto posso reduzir o tamanho de um PDF?",
+          "a": "Normalmente de 30 a 70%, dependendo do conteúdo. PDFs com muitas imagens comprimem mais."
+        },
+        {
+          "q": "A compressão afeta a qualidade?",
+          "a": "Usamos compressão sem perdas: o texto e os gráficos vetoriais não são afetados."
+        },
+        {
+          "q": "Qual é o tamanho máximo de arquivo?",
+          "a": "Usuários gratuitos: 10 MB. Usuários Pro: 100 MB."
+        }
+      ]
+    },
+    "pdf-to-word": {
+      "title": "PDF para Word",
+      "tagline": "Converta PDF em um documento Word editável.",
+      "intro": "Envie seu PDF e o convertemos em um arquivo .docx editável. Texto, tabelas e formatação básica são preservados.",
+      "faq": [
+        {
+          "q": "A formatação será preservada?",
+          "a": "Formatação básica como títulos, parágrafos e tabelas é preservada. Layouts complexos podem precisar de pequenos ajustes."
+        },
+        {
+          "q": "Posso editar o documento Word após a conversão?",
+          "a": "Sim: o resultado é um arquivo .docx totalmente editável, compatível com Microsoft Word e Google Docs."
+        },
+        {
+          "q": "Há limite de tamanho de arquivo?",
+          "a": "Usuários gratuitos podem converter PDFs de até 10 MB. Usuários Pro chegam a 100 MB."
+        }
+      ]
+    },
+    "word-to-pdf": {
+      "title": "Word para PDF",
+      "tagline": "Converta documentos Word em PDF instantaneamente.",
+      "intro": "Envie seu arquivo .doc ou .docx e o convertemos em um PDF profissional idêntico ao seu documento Word.",
+      "faq": [
+        {
+          "q": "Suporta .doc e .docx?",
+          "a": "Sim, tanto o formato antigo .doc quanto o moderno .docx são suportados."
+        },
+        {
+          "q": "As fontes e imagens serão preservadas?",
+          "a": "Sim: o PDF gerado mantém o layout do documento Word, incluindo fontes, imagens e tabelas."
+        },
+        { "q": "É grátis?", "a": "Sim, totalmente grátis e sem marcas d'água." }
+      ]
+    },
+    "rotate-pdf": {
+      "title": "Girar PDF",
+      "tagline": "Gire todas as páginas para a orientação correta.",
+      "intro": "Envie seu PDF, escolha a rotação de 90°, 180° ou 270° e baixe o arquivo corrigido instantaneamente. Todas as páginas são giradas juntas.",
+      "faq": [
+        {
+          "q": "Posso girar apenas uma página?",
+          "a": "Atualmente todas as páginas são giradas juntas. A rotação por página está disponível no plano Pro."
+        },
+        {
+          "q": "Girar afeta a qualidade do PDF?",
+          "a": "Não. A rotação é uma alteração de metadados: a qualidade do conteúdo não é afetada."
+        },
+        {
+          "q": "É grátis girar arquivos PDF?",
+          "a": "Sim, totalmente grátis e sem limites."
+        }
+      ]
+    },
+    "pdf-to-jpg": {
+      "title": "PDF para JPG",
+      "tagline": "Converta cada página do PDF em uma imagem JPG de alta qualidade.",
+      "intro": "Envie seu PDF e convertemos cada página em uma imagem JPG de alta resolução. Todas as páginas são reunidas em um ZIP para download fácil.",
+      "faq": [
+        {
+          "q": "Qual é a resolução das imagens JPG?",
+          "a": "As imagens são exportadas a 150 DPI por padrão, suficiente para tela e impressão padrão."
+        },
+        {
+          "q": "Posso converter apenas uma página?",
+          "a": "Envie um PDF de uma única página ou use antes nossa ferramenta Dividir PDF para extrair a página desejada."
+        },
+        {
+          "q": "É grátis?",
+          "a": "Sim, totalmente grátis e sem marcas d'água nas imagens."
+        }
+      ]
+    },
+    "protect-pdf": {
+      "title": "Proteger PDF",
+      "tagline": "Adicione uma senha ao seu PDF para impedir acessos não autorizados.",
+      "intro": "Envie seu PDF, digite uma senha e baixe o arquivo criptografado. Apenas quem tiver a senha poderá abri-lo.",
+      "faq": [
+        {
+          "q": "Qual criptografia é usada?",
+          "a": "Criptografia de 128 bits, compatível com todos os leitores de PDF, incluindo o Adobe Acrobat."
+        },
+        {
+          "q": "Posso remover a senha depois?",
+          "a": "Sim: use uma ferramenta de desbloqueio de PDF ou nosso futuro recurso Desbloquear PDF."
+        },
+        {
+          "q": "Meu arquivo está seguro durante o envio?",
+          "a": "Os arquivos são processados na memória e excluídos imediatamente após o download."
+        }
+      ]
+    }
+  }
+}

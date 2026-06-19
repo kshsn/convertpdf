@@ -77,7 +77,7 @@ export default function PricingPlans() {
         </button>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+      <div className="grid gap-6 md:grid-cols-2 max-w-3xl mx-auto">
         {PLANS.map((plan) => {
           const price =
             cycle === "annual" ? plan.priceAnnual : plan.priceMonthly;

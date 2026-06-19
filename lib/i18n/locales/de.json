@@ -1,0 +1,183 @@
+{
+  "nav": { "tools": "Werkzeuge", "pricing": "Preise", "goPro": "Pro werden" },
+  "footer": {
+    "tagline": "Kostenlose Online-PDF-Tools. Schnell, sicher und privat.",
+    "tools": "Werkzeuge",
+    "company": "Unternehmen",
+    "about": "Über uns",
+    "privacy": "Datenschutz",
+    "terms": "AGB"
+  },
+  "home": {
+    "heroTitle": "Kostenlose Online-PDF-Tools",
+    "heroSubtitle": "PDF-Dateien zusammenführen, teilen, komprimieren und konvertieren – 100 % kostenlos, ohne Anmeldung.",
+    "allTools": "Alle PDF-Tools",
+    "whyTitle": "Warum ConvertPDF?"
+  },
+  "common": {
+    "drop": "Datei hier ablegen",
+    "dragHere": "Datei hierher ziehen und ablegen",
+    "browse": "oder zum Durchsuchen klicken",
+    "processing": "Wird verarbeitet...",
+    "done": "Ihre Datei ist fertig!",
+    "download": "Herunterladen",
+    "another": "Weitere Datei verarbeiten",
+    "errorGeneric": "Etwas ist schiefgelaufen",
+    "advertisement": "Werbung",
+    "selected": "Ausgewählt"
+  },
+  "tools": {
+    "merge-pdf": {
+      "title": "PDF zusammenführen",
+      "tagline": "Mehrere PDF-Dateien zu einem Dokument kombinieren.",
+      "intro": "Laden Sie Ihre PDF-Dateien hoch, ordnen Sie sie neu an und führen Sie sie in Sekunden zu einem einzigen Dokument zusammen – ohne Softwareinstallation.",
+      "faq": [
+        {
+          "q": "Wie viele Dateien kann ich zusammenführen?",
+          "a": "Kostenlose Nutzer können bis zu 2 Dateien gleichzeitig zusammenführen. Pro-Nutzer erhalten unbegrenztes Batch-Zusammenführen."
+        },
+        {
+          "q": "Bleibt die Reihenfolge erhalten?",
+          "a": "Ja – Sie können die Dateien vor dem Zusammenführen neu anordnen, und das fertige PDF behält diese Reihenfolge bei."
+        },
+        {
+          "q": "Ist es kostenlos?",
+          "a": "Ja, völlig kostenlos und ohne Wasserzeichen."
+        }
+      ]
+    },
+    "split-pdf": {
+      "title": "PDF teilen",
+      "tagline": "Ein PDF in einzelne Dateien aufteilen, eine pro Seite.",
+      "intro": "Laden Sie Ihr PDF hoch und klicken Sie auf Teilen. Jede Seite wird als eigenes PDF gespeichert und in einer ZIP-Datei zum Download gebündelt.",
+      "faq": [
+        {
+          "q": "Wie teile ich ein PDF in einzelne Seiten?",
+          "a": "Lassen Sie das Seitenfeld leer und klicken Sie auf Teilen – jede Seite wird zu einem eigenen PDF, geliefert als ZIP."
+        },
+        {
+          "q": "Kann ich nur bestimmte Seiten teilen?",
+          "a": "Ja. Geben Sie einen Bereich wie 1-3, 5, 7-9 ein, und nur diese Seiten werden in separate Dateien aufgeteilt."
+        },
+        {
+          "q": "Gibt es eine Größenbeschränkung?",
+          "a": "Kostenlose Nutzer können PDFs bis 10 MB teilen. Pro-Nutzer bis zu 100 MB."
+        }
+      ]
+    },
+    "compress-pdf": {
+      "title": "PDF komprimieren",
+      "tagline": "PDF-Dateigröße ohne Qualitätsverlust reduzieren.",
+      "intro": "Unsere Komprimierung entfernt überflüssige Daten und optimiert Bilder bei erhaltener Lesbarkeit. Die meisten PDFs lassen sich um 30 bis 70 % verkleinern.",
+      "faq": [
+        {
+          "q": "Wie stark kann ich eine PDF-Datei verkleinern?",
+          "a": "Typischerweise 30 bis 70 %, je nach Inhalt. PDFs mit vielen Bildern lassen sich am stärksten komprimieren."
+        },
+        {
+          "q": "Beeinträchtigt die Komprimierung die Qualität?",
+          "a": "Wir nutzen verlustfreie Komprimierung – Text und Vektorgrafiken bleiben unverändert."
+        },
+        {
+          "q": "Wie groß darf die Datei maximal sein?",
+          "a": "Kostenlose Nutzer: 10 MB. Pro-Nutzer: 100 MB."
+        }
+      ]
+    },
+    "pdf-to-word": {
+      "title": "PDF zu Word",
+      "tagline": "PDF in ein bearbeitbares Word-Dokument umwandeln.",
+      "intro": "Laden Sie Ihr PDF hoch, und wir wandeln es in eine bearbeitbare .docx-Datei um. Text, Tabellen und einfache Formatierung bleiben erhalten.",
+      "faq": [
+        {
+          "q": "Bleibt die Formatierung erhalten?",
+          "a": "Einfache Formatierung wie Überschriften, Absätze und Tabellen bleibt erhalten. Komplexe Layouts erfordern eventuell kleine Anpassungen."
+        },
+        {
+          "q": "Kann ich das Word-Dokument nach der Umwandlung bearbeiten?",
+          "a": "Ja – das Ergebnis ist eine voll bearbeitbare .docx-Datei, kompatibel mit Microsoft Word und Google Docs."
+        },
+        {
+          "q": "Gibt es eine Größenbeschränkung?",
+          "a": "Kostenlose Nutzer können PDFs bis 10 MB umwandeln. Pro-Nutzer bis zu 100 MB."
+        }
+      ]
+    },
+    "word-to-pdf": {
+      "title": "Word zu PDF",
+      "tagline": "Word-Dokumente sofort in PDF umwandeln.",
+      "intro": "Laden Sie Ihre .doc- oder .docx-Datei hoch, und wir wandeln sie in ein professionelles PDF um, das genau wie Ihr Word-Dokument aussieht.",
+      "faq": [
+        {
+          "q": "Werden .doc und .docx unterstützt?",
+          "a": "Ja, sowohl das ältere .doc- als auch das moderne .docx-Format werden unterstützt."
+        },
+        {
+          "q": "Bleiben Schriftarten und Bilder erhalten?",
+          "a": "Ja – das erzeugte PDF entspricht dem Layout des Word-Dokuments, einschließlich Schriftarten, Bildern und Tabellen."
+        },
+        {
+          "q": "Ist es kostenlos?",
+          "a": "Ja, völlig kostenlos und ohne Wasserzeichen."
+        }
+      ]
+    },
+    "rotate-pdf": {
+      "title": "PDF drehen",
+      "tagline": "Alle Seiten in die richtige Ausrichtung drehen.",
+      "intro": "Laden Sie Ihr PDF hoch, wählen Sie eine Drehung um 90°, 180° oder 270° und laden Sie die korrigierte Datei sofort herunter. Alle Seiten werden gemeinsam gedreht.",
+      "faq": [
+        {
+          "q": "Kann ich nur eine Seite drehen?",
+          "a": "Derzeit werden alle Seiten gemeinsam gedreht. Das seitenweise Drehen ist im Pro-Tarif verfügbar."
+        },
+        {
+          "q": "Beeinträchtigt das Drehen die PDF-Qualität?",
+          "a": "Nein. Das Drehen ist eine Metadatenänderung – die Inhaltsqualität bleibt unberührt."
+        },
+        {
+          "q": "Ist das Drehen von PDF-Dateien kostenlos?",
+          "a": "Ja, völlig kostenlos und ohne Limits."
+        }
+      ]
+    },
+    "pdf-to-jpg": {
+      "title": "PDF zu JPG",
+      "tagline": "Jede PDF-Seite in ein hochwertiges JPG-Bild umwandeln.",
+      "intro": "Laden Sie Ihr PDF hoch, und wir wandeln jede Seite in ein hochauflösendes JPG-Bild um. Alle Seiten werden für den einfachen Download in einer ZIP-Datei gebündelt.",
+      "faq": [
+        {
+          "q": "Welche Auflösung haben die JPG-Bilder?",
+          "a": "Die Bilder werden standardmäßig mit 150 DPI exportiert – hoch genug für Bildschirm und Standarddruck."
+        },
+        {
+          "q": "Kann ich nur eine Seite umwandeln?",
+          "a": "Laden Sie ein einseitiges PDF hoch oder nutzen Sie zuerst unser PDF-teilen-Tool, um die gewünschte Seite zu extrahieren."
+        },
+        {
+          "q": "Ist es kostenlos?",
+          "a": "Ja, völlig kostenlos und ohne Wasserzeichen auf den Bildern."
+        }
+      ]
+    },
+    "protect-pdf": {
+      "title": "PDF schützen",
+      "tagline": "Schützen Sie Ihr PDF mit einem Passwort vor unbefugtem Zugriff.",
+      "intro": "Laden Sie Ihr PDF hoch, geben Sie ein Passwort ein und laden Sie die verschlüsselte Datei herunter. Nur Personen mit dem Passwort können sie öffnen.",
+      "faq": [
+        {
+          "q": "Welche Verschlüsselung wird verwendet?",
+          "a": "128-Bit-Verschlüsselung – kompatibel mit allen PDF-Readern, einschließlich Adobe Acrobat."
+        },
+        {
+          "q": "Kann ich das Passwort später entfernen?",
+          "a": "Ja – verwenden Sie ein PDF-Entsperr-Tool oder unsere kommende Funktion PDF entsperren."
+        },
+        {
+          "q": "Ist meine Datei während des Uploads sicher?",
+          "a": "Die Dateien werden im Arbeitsspeicher verarbeitet und sofort nach dem Download gelöscht."
+        }
+      ]
+    }
+  }
+}

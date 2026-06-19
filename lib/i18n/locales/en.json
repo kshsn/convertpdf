@@ -1,0 +1,177 @@
+{
+  "nav": { "tools": "Tools", "pricing": "Pricing", "goPro": "Go Pro" },
+  "footer": {
+    "tagline": "Free online PDF tools. Fast, secure, and private.",
+    "tools": "Tools",
+    "company": "Company",
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "home": {
+    "heroTitle": "Free Online PDF Tools",
+    "heroSubtitle": "Merge, split, compress, and convert PDF files — 100% free, no signup required.",
+    "allTools": "All PDF Tools",
+    "whyTitle": "Why ConvertPDF?"
+  },
+  "common": {
+    "drop": "Drop file here",
+    "dragHere": "Drag & drop your file here",
+    "browse": "or click to browse",
+    "processing": "Processing...",
+    "done": "Your file is ready!",
+    "download": "Download",
+    "another": "Process another file",
+    "errorGeneric": "Something went wrong",
+    "advertisement": "Advertisement",
+    "selected": "Selected"
+  },
+  "tools": {
+    "merge-pdf": {
+      "title": "Merge PDF",
+      "tagline": "Combine multiple PDF files into one document.",
+      "intro": "Upload your PDF files, reorder them, and merge into a single document in seconds — no software installation needed.",
+      "faq": [
+        {
+          "q": "How many files can I merge?",
+          "a": "Free users can merge up to 2 files at once. Pro users get unlimited batch merging."
+        },
+        {
+          "q": "Is the order preserved?",
+          "a": "Yes — you can reorder the files before merging, and the final PDF keeps that order."
+        },
+        { "q": "Is it free?", "a": "Yes, completely free with no watermarks." }
+      ]
+    },
+    "split-pdf": {
+      "title": "Split PDF",
+      "tagline": "Split a PDF into separate files, one per page.",
+      "intro": "Upload your PDF and click Split. Each page is saved as its own PDF file and bundled into a ZIP for download.",
+      "faq": [
+        {
+          "q": "How do I split a PDF into individual pages?",
+          "a": "Leave the pages field empty and click Split — every page becomes its own PDF, delivered as a ZIP."
+        },
+        {
+          "q": "Can I split only specific pages?",
+          "a": "Yes. Enter a range like 1-3, 5, 7-9 and only those pages will be split into separate files."
+        },
+        {
+          "q": "Is there a file size limit?",
+          "a": "Free users can split PDFs up to 10MB. Pro users get up to 100MB."
+        }
+      ]
+    },
+    "compress-pdf": {
+      "title": "Compress PDF",
+      "tagline": "Reduce PDF file size without losing quality.",
+      "intro": "Our compression removes redundant data and optimizes images while preserving readability. Most PDFs can be reduced by 30–70%.",
+      "faq": [
+        {
+          "q": "How much can I reduce a PDF file size?",
+          "a": "Typically 30–70% depending on content. PDFs with many images compress the most."
+        },
+        {
+          "q": "Will compression affect the quality?",
+          "a": "We use lossless compression — text and vector graphics are not affected."
+        },
+        {
+          "q": "What is the maximum file size?",
+          "a": "Free users: 10MB. Pro users: 100MB."
+        }
+      ]
+    },
+    "pdf-to-word": {
+      "title": "PDF to Word",
+      "tagline": "Convert PDF to an editable Word document.",
+      "intro": "Upload your PDF and we convert it to an editable .docx file. Text, tables, and basic formatting are preserved.",
+      "faq": [
+        {
+          "q": "Will the formatting be preserved?",
+          "a": "Basic formatting like headings, paragraphs, and tables are preserved. Complex layouts may need minor adjustments."
+        },
+        {
+          "q": "Can I edit the Word document after conversion?",
+          "a": "Yes — the output is a fully editable .docx file compatible with Microsoft Word and Google Docs."
+        },
+        {
+          "q": "Is there a file size limit?",
+          "a": "Free users can convert PDFs up to 10MB. Pro users get up to 100MB."
+        }
+      ]
+    },
+    "word-to-pdf": {
+      "title": "Word to PDF",
+      "tagline": "Convert Word documents to PDF instantly.",
+      "intro": "Upload your .doc or .docx file and we convert it to a professional PDF that looks exactly like your Word document.",
+      "faq": [
+        {
+          "q": "Does it support .doc and .docx?",
+          "a": "Yes, both older .doc and modern .docx formats are supported."
+        },
+        {
+          "q": "Will fonts and images be preserved?",
+          "a": "Yes — the PDF output matches the Word document layout including fonts, images, and tables."
+        },
+        { "q": "Is it free?", "a": "Yes, completely free with no watermarks." }
+      ]
+    },
+    "rotate-pdf": {
+      "title": "Rotate PDF",
+      "tagline": "Rotate all pages to the correct orientation.",
+      "intro": "Upload your PDF, choose 90°, 180°, or 270° rotation, and download the corrected file instantly. All pages are rotated together.",
+      "faq": [
+        {
+          "q": "Can I rotate just one page?",
+          "a": "Currently all pages are rotated together. Per-page rotation is available on the Pro plan."
+        },
+        {
+          "q": "Will rotating affect the PDF quality?",
+          "a": "No. Rotation is a metadata change — the content quality is not affected."
+        },
+        {
+          "q": "Is it free to rotate PDF files?",
+          "a": "Yes, completely free with no limits."
+        }
+      ]
+    },
+    "pdf-to-jpg": {
+      "title": "PDF to JPG",
+      "tagline": "Convert each PDF page to a high-quality JPG image.",
+      "intro": "Upload your PDF and we convert each page to a high-resolution JPG image. All pages are bundled into a ZIP file for easy download.",
+      "faq": [
+        {
+          "q": "What resolution are the JPG images?",
+          "a": "Images are exported at 150 DPI by default — high enough for screen and standard printing."
+        },
+        {
+          "q": "Can I convert just one page?",
+          "a": "Upload a single-page PDF or use our Split PDF tool first to extract the page you need."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes, completely free with no watermarks on the images."
+        }
+      ]
+    },
+    "protect-pdf": {
+      "title": "Protect PDF",
+      "tagline": "Add a password to your PDF to prevent unauthorized access.",
+      "intro": "Upload your PDF, enter a password, and download the encrypted file. Only people with the password can open it.",
+      "faq": [
+        {
+          "q": "What encryption is used?",
+          "a": "128-bit encryption — compatible with all PDF readers including Adobe Acrobat."
+        },
+        {
+          "q": "Can I remove the password later?",
+          "a": "Yes — use a PDF unlock tool or our upcoming Unlock PDF feature."
+        },
+        {
+          "q": "Is my file secure during upload?",
+          "a": "Files are processed in memory and deleted immediately after download."
+        }
+      ]
+    }
+  }
+}

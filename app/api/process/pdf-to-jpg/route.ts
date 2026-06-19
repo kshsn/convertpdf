@@ -5,11 +5,11 @@ import { writeFile, readdir, readFile, unlink, rmdir } from "fs/promises";
 import { tmpdir } from "os";
 import { join } from "path";
 import { randomUUID } from "crypto";
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const archiver = require("archiver") as (
-  format: string,
-) => import("archiver").Archiver;
+import type { Archiver } from "archiver";
 import { createWriteStream } from "fs";
+
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const archiverLib: { create(format: string): Archiver } = require("archiver");
 
 const execAsync = promisify(exec);
 
@@ -20,7 +20,7 @@ async function createZip(
 ): Promise<void> {
   return new Promise((resolve, reject) => {
     const output = createWriteStream(zipPath);
-    const archive = archiver("zip");
+    const archive = archiverLib.create("zip");
     output.on("close", resolve);
     archive.on("error", reject);
     archive.pipe(output);

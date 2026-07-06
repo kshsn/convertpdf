@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { locales, defaultLocale, isLocale, isRtl } from "@/lib/i18n/config";
+import LocaleHtmlAttrs from "@/components/LocaleHtmlAttrs";
 
 // Only the generated (non-default) locales are valid; anything else 404s.
 export const dynamicParams = false;
@@ -22,9 +23,12 @@ export default async function LocaleLayout({
   if (!isLocale(locale) || locale === defaultLocale) notFound();
 
   // The root layout owns <html lang="en">; we set the correct language and
-  // direction on the localized content wrapper (RTL for Arabic).
+  // direction on the localized content wrapper (RTL for Arabic), and correct the
+  // document's lang/dir on the client so it matches the locale.
+  const dir = isRtl(locale) ? "rtl" : "ltr";
   return (
-    <div lang={locale} dir={isRtl(locale) ? "rtl" : "ltr"}>
+    <div lang={locale} dir={dir}>
+      <LocaleHtmlAttrs locale={locale} dir={dir} />
       {children}
     </div>
   );

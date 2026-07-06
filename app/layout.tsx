@@ -43,9 +43,17 @@ export const metadata: Metadata = {
     description: "Free online PDF tools. Merge, split, compress, and convert.",
   },
   robots: { index: true, follow: true },
-  other: process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID
-    ? { "google-adsense-account": process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID }
-    : {},
+  other: {
+    ...(process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID
+      ? {
+          "google-adsense-account":
+            process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID,
+        }
+      : {}),
+    ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
+      : {}),
+  },
 };
 
 const jsonLd = {

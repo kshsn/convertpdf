@@ -13,8 +13,24 @@ interface ToolPageProps {
  * interactive part is the client ToolWidget.
  */
 export default function ToolPage({ slug, content, common }: ToolPageProps) {
+  // FAQPage structured data — lets Google AI Overviews and LLM/AI engines
+  // extract the questions and answers directly. Content is from our dictionary.
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: content.faq.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12 px-4">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="max-w-2xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-900 mb-2 text-center">
           {content.title}

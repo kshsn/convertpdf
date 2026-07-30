@@ -52,7 +52,7 @@
     "merge-pdf": {
       "title": "Merge PDF",
       "tagline": "Combine multiple PDF files into one document.",
-      "intro": "Upload your PDF files, reorder them, and merge into a single document in seconds — no software installation needed.",
+      "intro": "Merging PDFs is one of the most common things people need to do with a PDF file — combining a cover letter with a resume, joining scanned pages into one document, or assembling a set of reports for a client. ConvertPDF's Merge tool does it directly in your browser: drag in your files, drag them into the order you want, and click Merge. There's nothing to install and no account to create. You can reorder files before merging, and the final document follows exactly the order shown on screen — what you see is what you get. Processing takes a few seconds, and your files are deleted from our servers automatically after your download completes (or after 1 hour at the latest, whichever comes first). Free accounts can merge up to 2 files per merge; the Pro plan removes that cap for larger batches.",
       "faq": [
         {
           "q": "How many files can I merge?",
@@ -62,13 +62,29 @@
           "q": "Is the order preserved?",
           "a": "Yes — you can reorder the files before merging, and the final PDF keeps that order."
         },
+        {
+          "q": "Do I need an account to merge PDFs?",
+          "a": "No signup is required for merging up to 2 files. Just upload, reorder, and download."
+        },
+        {
+          "q": "What happens to my files after merging?",
+          "a": "Files are processed in memory and deleted automatically after your download completes, and no later than 1 hour after upload either way. We don't keep copies or share them with anyone."
+        },
+        {
+          "q": "Can I merge scanned PDFs or files with different page sizes?",
+          "a": "Yes — pages keep their original size and orientation; merging doesn't resize or crop anything."
+        },
+        {
+          "q": "Does merging work on mobile?",
+          "a": "Yes — the tool works in any modern mobile or desktop browser, no app download needed."
+        },
         { "q": "Is it free?", "a": "Yes, completely free with no watermarks." }
       ]
     },
     "split-pdf": {
       "title": "Split PDF",
       "tagline": "Split a PDF into separate files, one per page.",
-      "intro": "Upload your PDF and click Split. Each page is saved as its own PDF file and bundled into a ZIP for download.",
+      "intro": "Sometimes you only need one part of a PDF — a single chapter, an invoice's last page, the first three pages of a scanned document — and the rest just gets in the way. ConvertPDF's Split tool pulls exactly the pages you want, or breaks a whole document into one file per page. Upload your PDF, then either leave the page field blank to split every page into its own file (delivered as a ZIP), or enter a range like 1-3, 5, 7-9 to extract only what you need. Splitting happens entirely in memory on our servers — nothing is written to disk, and your file is deleted immediately after you download the result. Free users can split PDFs up to 10MB; Pro raises that to 100MB.",
       "faq": [
         {
           "q": "How do I split a PDF into individual pages?",
@@ -79,6 +95,18 @@
           "a": "Yes. Enter a range like 1-3, 5, 7-9 and only those pages will be split into separate files."
         },
         {
+          "q": "What format does the page range need to be in?",
+          "a": "Comma-separated page numbers and/or ranges, e.g. 1-3, 5, 7-9. Spaces are ignored."
+        },
+        {
+          "q": "Do I get one file or several?",
+          "a": "Splitting by range gives you one PDF containing those pages. Leaving the field empty gives you every page as its own PDF, bundled in a ZIP."
+        },
+        {
+          "q": "Does splitting reduce PDF quality?",
+          "a": "No — pages are extracted as-is, with the same resolution, fonts, and formatting as the original."
+        },
+        {
           "q": "Is there a file size limit?",
           "a": "Free users can split PDFs up to 10MB. Pro users get up to 100MB."
         }
@@ -87,7 +115,7 @@
     "compress-pdf": {
       "title": "Compress PDF",
       "tagline": "Reduce PDF file size without losing quality.",
-      "intro": "Our compression removes redundant data and optimizes images while preserving readability. Most PDFs can be reduced by 30–70%.",
+      "intro": "Large PDF files are a common headache — email attachment limits, slow uploads to a portal, or running out of storage. ConvertPDF's Compress tool shrinks your file by re-encoding embedded images and stripping redundant internal data, while leaving text, vector graphics, and page layout untouched. Most PDFs come out 30–70% smaller — scanned documents and image-heavy PDFs (brochures, presentations exported as PDF, photo-heavy reports) see the biggest reductions, since a text-only PDF has less to compress. Upload your file and you'll get a smaller version within seconds, with no visible change to how the document looks or reads. Free users can compress files up to 10MB; Pro removes that cap up to 100MB.",
       "faq": [
         {
           "q": "How much can I reduce a PDF file size?",
@@ -98,6 +126,18 @@
           "a": "We use lossless compression — text and vector graphics are not affected."
         },
         {
+          "q": "Why did my PDF only shrink a little?",
+          "a": "Text-only PDFs are already compact — there's less to compress compared to PDFs full of high-resolution images or scans."
+        },
+        {
+          "q": "Can I compress a scanned PDF?",
+          "a": "Yes — scanned documents (which are really just embedded images) usually see the largest size reduction."
+        },
+        {
+          "q": "Will compressing change how the PDF prints?",
+          "a": "No — page layout and text remain identical; only the underlying image data is optimized."
+        },
+        {
           "q": "What is the maximum file size?",
           "a": "Free users: 10MB. Pro users: 100MB."
         }
@@ -106,7 +146,7 @@
     "pdf-to-word": {
       "title": "PDF to Word",
       "tagline": "Convert PDF to an editable Word document.",
-      "intro": "Upload your PDF and we convert it to an editable .docx file. Text, tables, and basic formatting are preserved.",
+      "intro": "Converting a PDF back into an editable document is one of the most requested PDF tasks — you've got a contract, report, or form as a PDF and need to actually edit the text instead of retyping it from scratch. ConvertPDF's PDF to Word tool converts your file into a standard .docx document, preserving headings, paragraphs, tables, and basic formatting so it opens directly in Microsoft Word, Google Docs, or LibreOffice Writer — no plugins needed. Conversion quality depends on how the original PDF was created: files exported directly from Word or Google Docs convert cleanly since their internal text structure is preserved, while PDFs that started as scanned images with no underlying text layer will need OCR first, since there's no text to extract. Free users can convert files up to 10MB; Pro raises that to 100MB.",
       "faq": [
         {
           "q": "Will the formatting be preserved?",
@@ -117,6 +157,18 @@
           "a": "Yes — the output is a fully editable .docx file compatible with Microsoft Word and Google Docs."
         },
         {
+          "q": "Can I convert a scanned PDF to Word?",
+          "a": "If the scan has no underlying text layer, there's nothing to extract — you'll need to OCR it first. PDFs generated from a word processor convert cleanly since the text is already embedded."
+        },
+        {
+          "q": "Will tables convert correctly?",
+          "a": "Simple tables convert into real editable Word tables. Very complex or nested layouts may need minor manual cleanup."
+        },
+        {
+          "q": "What file format do I get back?",
+          "a": "A standard .docx file, compatible with Microsoft Word, Google Docs, and LibreOffice Writer."
+        },
+        {
           "q": "Is there a file size limit?",
           "a": "Free users can convert PDFs up to 10MB. Pro users get up to 100MB."
         }
@@ -125,7 +177,7 @@
     "word-to-pdf": {
       "title": "Word to PDF",
       "tagline": "Convert Word documents to PDF instantly.",
-      "intro": "Upload your .doc or .docx file and we convert it to a professional PDF that looks exactly like your Word document.",
+      "intro": "Turning a Word document into a PDF is the easiest way to make sure it looks the same on every device and can't be accidentally edited — useful for resumes, contracts, invoices, or anything you're sending somewhere final. ConvertPDF's Word to PDF tool accepts both the older .doc format and modern .docx files, producing a PDF that matches your document's layout exactly: fonts, images, headers, footers, and tables all carry over as they appeared in Word. There's no need to have Word installed — conversion happens on our server, so it works the same on Windows, Mac, Chromebook, or mobile. The file is deleted from our servers right after you download it.",
       "faq": [
         {
           "q": "Does it support .doc and .docx?",
@@ -135,13 +187,21 @@
           "q": "Will fonts and images be preserved?",
           "a": "Yes — the PDF output matches the Word document layout including fonts, images, and tables."
         },
+        {
+          "q": "Do I need Microsoft Word installed to use this?",
+          "a": "No — conversion happens entirely on our server, so it works from any device with a browser."
+        },
+        {
+          "q": "Can I convert a Google Docs file?",
+          "a": "Download it from Google Docs as .docx first (File → Download → Microsoft Word), then upload it here."
+        },
         { "q": "Is it free?", "a": "Yes, completely free with no watermarks." }
       ]
     },
     "rotate-pdf": {
       "title": "Rotate PDF",
       "tagline": "Rotate all pages to the correct orientation.",
-      "intro": "Upload your PDF, choose 90°, 180°, or 270° rotation, and download the corrected file instantly. All pages are rotated together.",
+      "intro": "A wrongly-oriented PDF — usually from a scanner that fed the page in sideways or upside down — is a small but annoying problem. ConvertPDF's Rotate tool fixes it in a few clicks: upload your PDF, choose 90°, 180°, or 270°, and download a corrected copy with every page rotated the same way. Rotation only changes the page's orientation metadata — it doesn't re-encode or resample the content, so there's no loss of image or text quality no matter how many times you rotate it. This covers the most common case, where an entire document was scanned the same way. If only some pages need rotating and others don't, that per-page control is available on the Pro plan.",
       "faq": [
         {
           "q": "Can I rotate just one page?",
@@ -152,6 +212,14 @@
           "a": "No. Rotation is a metadata change — the content quality is not affected."
         },
         {
+          "q": "What rotation angles are supported?",
+          "a": "90°, 180°, and 270° — covering every orientation a scanner or camera could produce."
+        },
+        {
+          "q": "Does rotating a PDF multiple times degrade it?",
+          "a": "No — it's a metadata change, not a re-render, so you can rotate as many times as you like with zero quality loss."
+        },
+        {
           "q": "Is it free to rotate PDF files?",
           "a": "Yes, completely free with no limits."
         }
@@ -160,7 +228,7 @@
     "pdf-to-jpg": {
       "title": "PDF to JPG",
       "tagline": "Convert each PDF page to a high-quality JPG image.",
-      "intro": "Upload your PDF and we convert each page to a high-resolution JPG image. All pages are bundled into a ZIP file for easy download.",
+      "intro": "Sometimes you need a PDF page as an actual image — to drop into a presentation, share as a preview, or post somewhere that doesn't accept PDFs. ConvertPDF's PDF to JPG tool converts every page of your PDF into a separate JPG image at 150 DPI, sharp enough for on-screen viewing and standard printing. Upload your file, and once processing finishes you'll get all the page images bundled into a single ZIP, ready to download. If your PDF has many pages but you only need one image, run it through Split PDF first to pull out that page, then convert just that page to JPG. Like our other tools, conversion happens in memory and your file is deleted from our servers right after you download the result.",
       "faq": [
         {
           "q": "What resolution are the JPG images?",
@@ -171,6 +239,10 @@
           "a": "Upload a single-page PDF or use our Split PDF tool first to extract the page you need."
         },
         {
+          "q": "What if my PDF has many pages?",
+          "a": "Every page converts to its own JPG, and all of them are bundled into one ZIP for download."
+        },
+        {
           "q": "Is it free?",
           "a": "Yes, completely free with no watermarks on the images."
         }
@@ -179,7 +251,7 @@
     "protect-pdf": {
       "title": "Protect PDF",
       "tagline": "Add a password to your PDF to prevent unauthorized access.",
-      "intro": "Upload your PDF, enter a password, and download the encrypted file. Only people with the password can open it.",
+      "intro": "If a PDF contains anything sensitive — a contract, financial statement, or personal ID — adding a password stops anyone without that password from opening it. ConvertPDF's Protect tool encrypts your PDF with 128-bit encryption, the same standard supported by Adobe Acrobat and virtually every other PDF reader, so recipients don't need special software to open a protected file — just the password you share with them separately. Upload your PDF, set a password, and download the encrypted version; the original, unprotected file is deleted from our servers immediately. Keep the password somewhere safe — since we don't store it, there's no way for us to recover or reset it if it's lost.",
       "faq": [
         {
           "q": "What encryption is used?",
@@ -192,6 +264,18 @@
         {
           "q": "Is my file secure during upload?",
           "a": "Files are processed in memory and deleted immediately after download."
+        },
+        {
+          "q": "What happens if I forget the password?",
+          "a": "We don't store your password, so there's no way for us to recover or reset it. Keep it somewhere safe."
+        },
+        {
+          "q": "Will the password-protected PDF open in any PDF reader?",
+          "a": "Yes — 128-bit PDF encryption is supported by Adobe Acrobat, Preview, browser PDF viewers, and virtually every other reader."
+        },
+        {
+          "q": "Is my original file kept anywhere after I protect it?",
+          "a": "No — the unprotected original is deleted from our servers as soon as the encrypted version is created."
         }
       ]
     }

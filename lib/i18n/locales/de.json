@@ -52,7 +52,7 @@
     "merge-pdf": {
       "title": "PDF zusammenführen",
       "tagline": "Mehrere PDF-Dateien zu einem Dokument kombinieren.",
-      "intro": "Laden Sie Ihre PDF-Dateien hoch, ordnen Sie sie neu an und führen Sie sie in Sekunden zu einem einzigen Dokument zusammen – ohne Softwareinstallation.",
+      "intro": "Das Zusammenführen von PDFs gehört zu den häufigsten Aufgaben rund um PDF-Dateien – ein Anschreiben mit einem Lebenslauf kombinieren, gescannte Seiten zu einem Dokument zusammenfügen oder mehrere Berichte für einen Kunden bündeln. Das Zusammenführen-Tool von ConvertPDF erledigt das direkt in Ihrem Browser: Ziehen Sie Ihre Dateien hinein, ordnen Sie sie per Drag & Drop in der gewünschten Reihenfolge an und klicken Sie auf Zusammenführen. Es muss nichts installiert werden, und Sie brauchen kein Konto. Sie können die Dateien vor dem Zusammenführen neu anordnen, und das fertige Dokument behält genau die auf dem Bildschirm angezeigte Reihenfolge bei. Die Verarbeitung dauert nur wenige Sekunden, und Ihre Dateien werden automatisch von unseren Servern gelöscht, sobald Ihr Download abgeschlossen ist – spätestens jedoch nach 1 Stunde. Kostenlose Konten können bis zu 2 Dateien pro Zusammenführung kombinieren; der Pro-Tarif hebt dieses Limit für größere Stapel auf.",
       "faq": [
         {
           "q": "Wie viele Dateien kann ich zusammenführen?",
@@ -63,6 +63,22 @@
           "a": "Ja – Sie können die Dateien vor dem Zusammenführen neu anordnen, und das fertige PDF behält diese Reihenfolge bei."
         },
         {
+          "q": "Brauche ich ein Konto, um PDFs zusammenzuführen?",
+          "a": "Für das Zusammenführen von bis zu 2 Dateien ist keine Anmeldung nötig. Einfach hochladen, anordnen und herunterladen."
+        },
+        {
+          "q": "Was passiert mit meinen Dateien nach dem Zusammenführen?",
+          "a": "Dateien werden im Arbeitsspeicher verarbeitet und automatisch gelöscht, sobald Ihr Download abgeschlossen ist – spätestens jedoch 1 Stunde nach dem Hochladen. Wir behalten keine Kopien und geben nichts an Dritte weiter."
+        },
+        {
+          "q": "Kann ich gescannte PDFs oder Dateien mit unterschiedlichen Seitengrößen zusammenführen?",
+          "a": "Ja – Seiten behalten ihre ursprüngliche Größe und Ausrichtung; beim Zusammenführen wird nichts skaliert oder zugeschnitten."
+        },
+        {
+          "q": "Funktioniert das Zusammenführen auf dem Smartphone?",
+          "a": "Ja – das Tool funktioniert in jedem modernen mobilen oder Desktop-Browser, ganz ohne App."
+        },
+        {
           "q": "Ist es kostenlos?",
           "a": "Ja, völlig kostenlos und ohne Wasserzeichen."
         }
@@ -71,7 +87,7 @@
     "split-pdf": {
       "title": "PDF teilen",
       "tagline": "Ein PDF in einzelne Dateien aufteilen, eine pro Seite.",
-      "intro": "Laden Sie Ihr PDF hoch und klicken Sie auf Teilen. Jede Seite wird als eigenes PDF gespeichert und in einer ZIP-Datei zum Download gebündelt.",
+      "intro": "Manchmal brauchen Sie nur einen Teil eines PDFs – ein einzelnes Kapitel, die letzte Seite einer Rechnung oder die ersten drei Seiten eines gescannten Dokuments – und der Rest ist nur im Weg. Das Teilen-Tool von ConvertPDF holt genau die gewünschten Seiten heraus oder zerlegt ein ganzes Dokument in einzelne Dateien pro Seite. Laden Sie Ihr PDF hoch und lassen Sie das Seitenfeld entweder leer, um jede Seite in eine eigene Datei zu teilen (als ZIP geliefert), oder geben Sie einen Bereich wie 1-3, 5, 7-9 ein, um nur das zu extrahieren, was Sie brauchen. Das Teilen erfolgt vollständig im Arbeitsspeicher unserer Server – nichts wird auf die Festplatte geschrieben, und Ihre Datei wird sofort nach dem Download des Ergebnisses gelöscht. Kostenlose Nutzer können PDFs bis 10 MB teilen; Pro hebt das auf 100 MB an.",
       "faq": [
         {
           "q": "Wie teile ich ein PDF in einzelne Seiten?",
@@ -82,6 +98,18 @@
           "a": "Ja. Geben Sie einen Bereich wie 1-3, 5, 7-9 ein, und nur diese Seiten werden in separate Dateien aufgeteilt."
         },
         {
+          "q": "In welchem Format muss der Seitenbereich angegeben werden?",
+          "a": "Kommagetrennte Seitenzahlen und/oder Bereiche, z. B. 1-3, 5, 7-9. Leerzeichen werden ignoriert."
+        },
+        {
+          "q": "Bekomme ich eine oder mehrere Dateien?",
+          "a": "Beim Teilen nach Bereich erhalten Sie ein PDF mit genau diesen Seiten. Bleibt das Feld leer, erhalten Sie jede Seite als eigenes PDF, gebündelt in einer ZIP-Datei."
+        },
+        {
+          "q": "Verringert das Teilen die PDF-Qualität?",
+          "a": "Nein – Seiten werden unverändert extrahiert, mit derselben Auflösung, denselben Schriftarten und derselben Formatierung wie das Original."
+        },
+        {
           "q": "Gibt es eine Größenbeschränkung?",
           "a": "Kostenlose Nutzer können PDFs bis 10 MB teilen. Pro-Nutzer bis zu 100 MB."
         }
@@ -90,7 +118,7 @@
     "compress-pdf": {
       "title": "PDF komprimieren",
       "tagline": "PDF-Dateigröße ohne Qualitätsverlust reduzieren.",
-      "intro": "Unsere Komprimierung entfernt überflüssige Daten und optimiert Bilder bei erhaltener Lesbarkeit. Die meisten PDFs lassen sich um 30 bis 70 % verkleinern.",
+      "intro": "Große PDF-Dateien sind ein häufiges Problem – Anhanggrenzen bei E-Mails, langsame Uploads zu einem Portal oder knapper Speicherplatz. Das Komprimieren-Tool von ConvertPDF verkleinert Ihre Datei, indem eingebettete Bilder neu kodiert und überflüssige interne Daten entfernt werden, während Text, Vektorgrafiken und Seitenlayout unangetastet bleiben. Die meisten PDFs werden 30–70 % kleiner – gescannte Dokumente und bildlastige PDFs (Broschüren, als PDF exportierte Präsentationen, fotolastige Berichte) profitieren am meisten, da ein reiner Textinhalt weniger Komprimierungspotenzial bietet. Laden Sie Ihre Datei hoch, und innerhalb von Sekunden erhalten Sie eine kleinere Version zum Download – ohne sichtbare Veränderung am Aussehen oder Inhalt des Dokuments. Kostenlose Nutzer können Dateien bis 10 MB komprimieren; Pro hebt dieses Limit auf 100 MB an.",
       "faq": [
         {
           "q": "Wie stark kann ich eine PDF-Datei verkleinern?",
@@ -101,6 +129,18 @@
           "a": "Wir nutzen verlustfreie Komprimierung – Text und Vektorgrafiken bleiben unverändert."
         },
         {
+          "q": "Warum ist meine PDF-Datei nur wenig kleiner geworden?",
+          "a": "Reine Textdateien sind bereits kompakt – da gibt es weniger zu komprimieren als bei PDFs voller hochauflösender Bilder oder Scans."
+        },
+        {
+          "q": "Kann ich ein gescanntes PDF komprimieren?",
+          "a": "Ja – gescannte Dokumente (die im Grunde nur eingebettete Bilder sind) zeigen üblicherweise die größte Größenreduzierung."
+        },
+        {
+          "q": "Verändert die Komprimierung, wie das PDF gedruckt wird?",
+          "a": "Nein – Seitenlayout und Text bleiben identisch; nur die zugrunde liegenden Bilddaten werden optimiert."
+        },
+        {
           "q": "Wie groß darf die Datei maximal sein?",
           "a": "Kostenlose Nutzer: 10 MB. Pro-Nutzer: 100 MB."
         }
@@ -109,7 +149,7 @@
     "pdf-to-word": {
       "title": "PDF zu Word",
       "tagline": "PDF in ein bearbeitbares Word-Dokument umwandeln.",
-      "intro": "Laden Sie Ihr PDF hoch, und wir wandeln es in eine bearbeitbare .docx-Datei um. Text, Tabellen und einfache Formatierung bleiben erhalten.",
+      "intro": "Ein PDF wieder in ein bearbeitbares Dokument zu verwandeln, ist eine der am häufigsten gewünschten PDF-Aufgaben – Sie haben einen Vertrag, Bericht oder ein Formular als PDF vorliegen und müssen den Text tatsächlich bearbeiten, statt ihn von Grund auf neu zu tippen. Das PDF-zu-Word-Tool von ConvertPDF wandelt Ihre Datei in ein Standard-.docx-Dokument um und erhält dabei Überschriften, Absätze, Tabellen und einfache Formatierung, sodass es direkt in Microsoft Word, Google Docs oder LibreOffice Writer geöffnet werden kann – ganz ohne Zusatzprogramme. Die Umwandlungsqualität hängt davon ab, wie das ursprüngliche PDF erstellt wurde: Dateien, die direkt aus Word oder Google Docs exportiert wurden, wandeln sich sauber um, da ihre interne Textstruktur erhalten bleibt, während PDFs, die als gescannte Bilder ohne zugrunde liegende Textebene begonnen haben, zuerst eine OCR-Erkennung benötigen, da es keinen extrahierbaren Text gibt. Kostenlose Nutzer können Dateien bis 10 MB umwandeln; Pro hebt das auf 100 MB an.",
       "faq": [
         {
           "q": "Bleibt die Formatierung erhalten?",
@@ -120,6 +160,18 @@
           "a": "Ja – das Ergebnis ist eine voll bearbeitbare .docx-Datei, kompatibel mit Microsoft Word und Google Docs."
         },
         {
+          "q": "Kann ich ein gescanntes PDF in Word umwandeln?",
+          "a": "Hat der Scan keine zugrunde liegende Textebene, gibt es nichts zu extrahieren – Sie müssen ihn zuerst per OCR bearbeiten. PDFs aus einem Textverarbeitungsprogramm wandeln sich sauber um, da der Text bereits eingebettet ist."
+        },
+        {
+          "q": "Werden Tabellen korrekt umgewandelt?",
+          "a": "Einfache Tabellen werden zu echten, bearbeitbaren Word-Tabellen. Sehr komplexe oder verschachtelte Layouts benötigen eventuell eine kleine manuelle Nachbearbeitung."
+        },
+        {
+          "q": "Welches Dateiformat erhalte ich zurück?",
+          "a": "Eine Standard-.docx-Datei, kompatibel mit Microsoft Word, Google Docs und LibreOffice Writer."
+        },
+        {
           "q": "Gibt es eine Größenbeschränkung?",
           "a": "Kostenlose Nutzer können PDFs bis 10 MB umwandeln. Pro-Nutzer bis zu 100 MB."
         }
@@ -128,7 +180,7 @@
     "word-to-pdf": {
       "title": "Word zu PDF",
       "tagline": "Word-Dokumente sofort in PDF umwandeln.",
-      "intro": "Laden Sie Ihre .doc- oder .docx-Datei hoch, und wir wandeln sie in ein professionelles PDF um, das genau wie Ihr Word-Dokument aussieht.",
+      "intro": "Ein Word-Dokument in ein PDF umzuwandeln, ist der einfachste Weg, um sicherzustellen, dass es auf jedem Gerät gleich aussieht und nicht versehentlich verändert werden kann – nützlich für Lebensläufe, Verträge, Rechnungen oder alles, was Sie in endgültiger Form verschicken. Das Word-zu-PDF-Tool von ConvertPDF akzeptiert sowohl das ältere .doc-Format als auch moderne .docx-Dateien und erzeugt ein PDF, das dem Layout Ihres Dokuments exakt entspricht: Schriftarten, Bilder, Kopf- und Fußzeilen sowie Tabellen bleiben genau wie in Word erhalten. Word muss dafür nicht installiert sein – die Umwandlung erfolgt auf unserem Server und funktioniert daher genauso auf Windows, Mac, Chromebook oder dem Smartphone. Die Datei wird von unseren Servern gelöscht, sobald Sie sie heruntergeladen haben.",
       "faq": [
         {
           "q": "Werden .doc und .docx unterstützt?",
@@ -139,6 +191,14 @@
           "a": "Ja – das erzeugte PDF entspricht dem Layout des Word-Dokuments, einschließlich Schriftarten, Bildern und Tabellen."
         },
         {
+          "q": "Brauche ich Microsoft Word installiert, um dieses Tool zu nutzen?",
+          "a": "Nein – die Umwandlung erfolgt vollständig auf unserem Server und funktioniert daher von jedem Gerät mit Browser aus."
+        },
+        {
+          "q": "Kann ich eine Google-Docs-Datei umwandeln?",
+          "a": "Laden Sie sie zuerst aus Google Docs als .docx herunter (Datei → Herunterladen → Microsoft Word) und laden Sie sie dann hier hoch."
+        },
+        {
           "q": "Ist es kostenlos?",
           "a": "Ja, völlig kostenlos und ohne Wasserzeichen."
         }
@@ -147,7 +207,7 @@
     "rotate-pdf": {
       "title": "PDF drehen",
       "tagline": "Alle Seiten in die richtige Ausrichtung drehen.",
-      "intro": "Laden Sie Ihr PDF hoch, wählen Sie eine Drehung um 90°, 180° oder 270° und laden Sie die korrigierte Datei sofort herunter. Alle Seiten werden gemeinsam gedreht.",
+      "intro": "Ein falsch ausgerichtetes PDF – meist von einem Scanner, der die Seite seitlich oder auf dem Kopf eingezogen hat – ist ein kleines, aber lästiges Problem. Das Drehen-Tool von ConvertPDF behebt das mit wenigen Klicks: Laden Sie Ihr PDF hoch, wählen Sie 90°, 180° oder 270° und laden Sie eine korrigierte Kopie herunter, bei der jede Seite gleich gedreht wurde. Die Drehung ändert nur die Ausrichtungs-Metadaten der Seite – der Inhalt wird nicht neu kodiert oder neu abgetastet, sodass es unabhängig davon, wie oft Sie drehen, zu keinem Qualitätsverlust bei Bild oder Text kommt. Das deckt den häufigsten Fall ab, bei dem ein ganzes Dokument in derselben falschen Ausrichtung gescannt wurde. Wenn nur einige Seiten gedreht werden müssen und andere nicht, steht diese seitenweise Kontrolle im Pro-Tarif zur Verfügung.",
       "faq": [
         {
           "q": "Kann ich nur eine Seite drehen?",
@@ -158,6 +218,14 @@
           "a": "Nein. Das Drehen ist eine Metadatenänderung – die Inhaltsqualität bleibt unberührt."
         },
         {
+          "q": "Welche Drehwinkel werden unterstützt?",
+          "a": "90°, 180° und 270° – das deckt jede Ausrichtung ab, die ein Scanner oder eine Kamera erzeugen könnte."
+        },
+        {
+          "q": "Verschlechtert mehrfaches Drehen eines PDFs die Qualität?",
+          "a": "Nein – es handelt sich um eine Metadatenänderung, kein Neu-Rendering, Sie können also so oft drehen, wie Sie möchten, ohne jeglichen Qualitätsverlust."
+        },
+        {
           "q": "Ist das Drehen von PDF-Dateien kostenlos?",
           "a": "Ja, völlig kostenlos und ohne Limits."
         }
@@ -166,7 +234,7 @@
     "pdf-to-jpg": {
       "title": "PDF zu JPG",
       "tagline": "Jede PDF-Seite in ein hochwertiges JPG-Bild umwandeln.",
-      "intro": "Laden Sie Ihr PDF hoch, und wir wandeln jede Seite in ein hochauflösendes JPG-Bild um. Alle Seiten werden für den einfachen Download in einer ZIP-Datei gebündelt.",
+      "intro": "Manchmal brauchen Sie eine PDF-Seite als tatsächliches Bild – um sie in eine Präsentation einzufügen, als Vorschau zu teilen oder irgendwo zu veröffentlichen, wo keine PDFs akzeptiert werden. Das PDF-zu-JPG-Tool von ConvertPDF wandelt jede Seite Ihres PDFs in ein eigenes JPG-Bild mit 150 DPI um – scharf genug für die Bildschirmansicht und den Standarddruck. Laden Sie Ihre Datei hoch, und sobald die Verarbeitung abgeschlossen ist, erhalten Sie alle Seitenbilder gebündelt in einer einzigen ZIP-Datei zum Download. Hat Ihr PDF viele Seiten, Sie brauchen aber nur ein Bild, führen Sie es zuerst durch unser Teilen-Tool, um diese eine Seite zu extrahieren, und wandeln Sie dann nur diese Seite in JPG um. Wie bei unseren anderen Tools erfolgt die Umwandlung im Arbeitsspeicher, und Ihre Datei wird von unseren Servern gelöscht, sobald Sie das Ergebnis heruntergeladen haben.",
       "faq": [
         {
           "q": "Welche Auflösung haben die JPG-Bilder?",
@@ -177,6 +245,10 @@
           "a": "Laden Sie ein einseitiges PDF hoch oder nutzen Sie zuerst unser PDF-teilen-Tool, um die gewünschte Seite zu extrahieren."
         },
         {
+          "q": "Was, wenn mein PDF viele Seiten hat?",
+          "a": "Jede Seite wird zu einem eigenen JPG, und alle werden zum Download in einer ZIP-Datei gebündelt."
+        },
+        {
           "q": "Ist es kostenlos?",
           "a": "Ja, völlig kostenlos und ohne Wasserzeichen auf den Bildern."
         }
@@ -185,7 +257,7 @@
     "protect-pdf": {
       "title": "PDF schützen",
       "tagline": "Schützen Sie Ihr PDF mit einem Passwort vor unbefugtem Zugriff.",
-      "intro": "Laden Sie Ihr PDF hoch, geben Sie ein Passwort ein und laden Sie die verschlüsselte Datei herunter. Nur Personen mit dem Passwort können sie öffnen.",
+      "intro": "Wenn ein PDF etwas Sensibles enthält – einen Vertrag, eine Finanzübersicht oder einen Personalausweis – verhindert ein Passwort, dass jemand ohne dieses Passwort die Datei öffnen kann. Das Schützen-Tool von ConvertPDF verschlüsselt Ihr PDF mit 128-Bit-Verschlüsselung, demselben Standard, den auch Adobe Acrobat und praktisch jeder andere PDF-Reader unterstützt, sodass Empfänger keine spezielle Software brauchen, um eine geschützte Datei zu öffnen – nur das Passwort, das Sie separat mit ihnen teilen. Laden Sie Ihr PDF hoch, legen Sie ein Passwort fest und laden Sie die verschlüsselte Version herunter; die ursprüngliche, ungeschützte Datei wird sofort von unseren Servern gelöscht. Bewahren Sie das Passwort sicher auf – da wir es nicht speichern, können wir es bei Verlust weder wiederherstellen noch zurücksetzen.",
       "faq": [
         {
           "q": "Welche Verschlüsselung wird verwendet?",
@@ -198,6 +270,18 @@
         {
           "q": "Ist meine Datei während des Uploads sicher?",
           "a": "Die Dateien werden im Arbeitsspeicher verarbeitet und sofort nach dem Download gelöscht."
+        },
+        {
+          "q": "Was passiert, wenn ich das Passwort vergesse?",
+          "a": "Wir speichern Ihr Passwort nicht, daher können wir es nicht wiederherstellen oder zurücksetzen. Bewahren Sie es sicher auf."
+        },
+        {
+          "q": "Lässt sich das passwortgeschützte PDF in jedem PDF-Reader öffnen?",
+          "a": "Ja – die 128-Bit-PDF-Verschlüsselung wird von Adobe Acrobat, Preview, Browser-PDF-Ansichten und praktisch jedem anderen Reader unterstützt."
+        },
+        {
+          "q": "Wird meine Originaldatei nach dem Schützen irgendwo aufbewahrt?",
+          "a": "Nein – das ungeschützte Original wird von unseren Servern gelöscht, sobald die verschlüsselte Version erstellt wurde."
         }
       ]
     }

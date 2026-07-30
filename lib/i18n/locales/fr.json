@@ -52,7 +52,7 @@
     "merge-pdf": {
       "title": "Fusionner PDF",
       "tagline": "Combinez plusieurs fichiers PDF en un seul document.",
-      "intro": "Importez vos fichiers PDF, réorganisez-les et fusionnez-les en un seul document en quelques secondes, sans installer de logiciel.",
+      "intro": "Fusionner des PDF est l'une des tâches les plus courantes avec ce format : combiner une lettre de motivation avec un CV, regrouper des pages scannées en un seul document, ou assembler plusieurs rapports pour un client. L'outil Fusionner de ConvertPDF le fait directement dans votre navigateur : glissez vos fichiers, réorganisez-les comme vous le souhaitez et cliquez sur Fusionner. Rien à installer, aucun compte à créer. Vous pouvez réorganiser les fichiers avant la fusion, et le document final suit exactement l'ordre affiché à l'écran. Le traitement ne prend que quelques secondes, et vos fichiers sont supprimés automatiquement de nos serveurs dès que votre téléchargement est terminé (ou au bout d'une heure maximum, selon la première échéance). Les comptes gratuits peuvent fusionner jusqu'à 2 fichiers à la fois ; le plan Pro supprime cette limite pour les lots plus importants.",
       "faq": [
         {
           "q": "Combien de fichiers puis-je fusionner ?",
@@ -63,6 +63,22 @@
           "a": "Oui : vous pouvez réorganiser les fichiers avant la fusion et le PDF final conserve cet ordre."
         },
         {
+          "q": "Ai-je besoin d'un compte pour fusionner des PDF ?",
+          "a": "Aucune inscription n'est nécessaire pour fusionner jusqu'à 2 fichiers. Importez, réorganisez et téléchargez, c'est tout."
+        },
+        {
+          "q": "Que deviennent mes fichiers après la fusion ?",
+          "a": "Les fichiers sont traités en mémoire et supprimés automatiquement une fois le téléchargement terminé, et au plus tard 1 heure après l'import dans tous les cas. Nous ne conservons aucune copie et ne les partageons avec personne."
+        },
+        {
+          "q": "Puis-je fusionner des PDF scannés ou de tailles de page différentes ?",
+          "a": "Oui — les pages conservent leur taille et leur orientation d'origine ; la fusion ne redimensionne ni ne recadre rien."
+        },
+        {
+          "q": "La fusion fonctionne-t-elle sur mobile ?",
+          "a": "Oui — l'outil fonctionne dans n'importe quel navigateur mobile ou de bureau récent, sans application à télécharger."
+        },
+        {
           "q": "Est-ce gratuit ?",
           "a": "Oui, entièrement gratuit et sans filigrane."
         }
@@ -71,7 +87,7 @@
     "split-pdf": {
       "title": "Diviser PDF",
       "tagline": "Divisez un PDF en fichiers séparés, un par page.",
-      "intro": "Importez votre PDF et cliquez sur Diviser. Chaque page est enregistrée comme son propre PDF et regroupée dans un ZIP à télécharger.",
+      "intro": "Parfois, vous n'avez besoin que d'une partie d'un PDF — un chapitre précis, la dernière page d'une facture, les trois premières pages d'un document scanné — et le reste ne fait que gêner. L'outil Diviser de ConvertPDF extrait exactement les pages dont vous avez besoin, ou découpe tout un document en un fichier par page. Importez votre PDF, puis laissez le champ des pages vide pour diviser chaque page en son propre fichier (livré sous forme de ZIP), ou saisissez une plage comme 1-3, 5, 7-9 pour n'extraire que ce dont vous avez besoin. La division se fait entièrement en mémoire sur nos serveurs — rien n'est écrit sur disque — et votre fichier est supprimé dès que vous téléchargez le résultat. Les utilisateurs gratuits peuvent diviser des PDF jusqu'à 10 Mo ; Pro porte cette limite à 100 Mo.",
       "faq": [
         {
           "q": "Comment diviser un PDF en pages individuelles ?",
@@ -82,6 +98,18 @@
           "a": "Oui. Saisissez une plage comme 1-3, 5, 7-9 et seules ces pages seront divisées en fichiers séparés."
         },
         {
+          "q": "Quel format utiliser pour la plage de pages ?",
+          "a": "Des numéros de page et/ou des plages séparés par des virgules, par exemple 1-3, 5, 7-9. Les espaces sont ignorés."
+        },
+        {
+          "q": "Est-ce que j'obtiens un ou plusieurs fichiers ?",
+          "a": "Diviser par plage vous donne un seul PDF contenant ces pages. Laisser le champ vide vous donne chaque page sous forme de PDF individuel, regroupés dans un ZIP."
+        },
+        {
+          "q": "La division réduit-elle la qualité du PDF ?",
+          "a": "Non — les pages sont extraites telles quelles, avec la même résolution, les mêmes polices et la même mise en forme que l'original."
+        },
+        {
           "q": "Y a-t-il une limite de taille ?",
           "a": "Les utilisateurs gratuits peuvent diviser des PDF jusqu'à 10 Mo. Les utilisateurs Pro vont jusqu'à 100 Mo."
         }
@@ -90,7 +118,7 @@
     "compress-pdf": {
       "title": "Compresser PDF",
       "tagline": "Réduisez la taille du PDF sans perte de qualité.",
-      "intro": "Notre compression supprime les données redondantes et optimise les images tout en préservant la lisibilité. La plupart des PDF peuvent être réduits de 30 à 70 %.",
+      "intro": "Les fichiers PDF volumineux posent souvent problème : limites de pièces jointes par e-mail, envoi lent vers un portail, ou manque d'espace de stockage. L'outil Compresser de ConvertPDF réduit votre fichier en réencodant les images intégrées et en supprimant les données internes redondantes, sans toucher au texte, aux graphiques vectoriels ni à la mise en page. La plupart des PDF sont réduits de 30 à 70 % — les documents scannés et les PDF riches en images (brochures, présentations exportées en PDF, rapports remplis de photos) profitent le plus de la réduction, un PDF purement textuel ayant moins de marge de compression. Importez votre fichier et, en quelques secondes, vous obtenez une version plus légère prête à télécharger, sans changement visible dans l'apparence ou le contenu du document. Les utilisateurs gratuits peuvent compresser des fichiers jusqu'à 10 Mo ; Pro supprime cette limite jusqu'à 100 Mo.",
       "faq": [
         {
           "q": "De combien puis-je réduire la taille d'un PDF ?",
@@ -101,6 +129,18 @@
           "a": "Nous utilisons une compression sans perte : le texte et les graphiques vectoriels ne sont pas affectés."
         },
         {
+          "q": "Pourquoi mon PDF n'a-t-il été que légèrement réduit ?",
+          "a": "Les PDF purement textuels sont déjà compacts — il y a moins à compresser que dans les PDF remplis d'images haute résolution ou de scans."
+        },
+        {
+          "q": "Puis-je compresser un PDF scanné ?",
+          "a": "Oui — les documents scannés (qui ne sont en réalité que des images intégrées) montrent généralement la plus forte réduction de taille."
+        },
+        {
+          "q": "La compression change-t-elle l'impression du PDF ?",
+          "a": "Non — la mise en page et le texte restent identiques ; seules les données d'image sous-jacentes sont optimisées."
+        },
+        {
           "q": "Quelle est la taille de fichier maximale ?",
           "a": "Utilisateurs gratuits : 10 Mo. Utilisateurs Pro : 100 Mo."
         }
@@ -109,7 +149,7 @@
     "pdf-to-word": {
       "title": "PDF en Word",
       "tagline": "Convertissez un PDF en document Word modifiable.",
-      "intro": "Importez votre PDF et nous le convertissons en fichier .docx modifiable. Le texte, les tableaux et la mise en forme de base sont conservés.",
+      "intro": "Reconvertir un PDF en document modifiable est l'une des tâches les plus demandées avec ce format : vous avez un contrat, un rapport ou un formulaire en PDF et devez réellement modifier le texte plutôt que de tout retaper depuis zéro. L'outil PDF en Word de ConvertPDF convertit votre fichier en document .docx standard, en conservant les titres, paragraphes, tableaux et la mise en forme de base, pour qu'il s'ouvre directement dans Microsoft Word, Google Docs ou LibreOffice Writer, sans aucun module complémentaire. La qualité de la conversion dépend de la façon dont le PDF d'origine a été créé : les fichiers exportés directement depuis Word ou Google Docs se convertissent proprement, car leur structure de texte interne est préservée, tandis que les PDF issus d'images scannées sans couche de texte sous-jacente nécessiteront d'abord un OCR, puisqu'il n'y a aucun texte à extraire. Les utilisateurs gratuits peuvent convertir des fichiers jusqu'à 10 Mo ; Pro porte cette limite à 100 Mo.",
       "faq": [
         {
           "q": "La mise en forme sera-t-elle conservée ?",
@@ -120,6 +160,18 @@
           "a": "Oui : le résultat est un fichier .docx entièrement modifiable, compatible avec Microsoft Word et Google Docs."
         },
         {
+          "q": "Puis-je convertir un PDF scanné en Word ?",
+          "a": "Si le scan n'a pas de couche de texte sous-jacente, il n'y a rien à extraire — vous devrez d'abord passer par un OCR. Les PDF générés depuis un traitement de texte se convertissent proprement, car le texte y est déjà intégré."
+        },
+        {
+          "q": "Les tableaux se convertissent-ils correctement ?",
+          "a": "Les tableaux simples deviennent de vrais tableaux Word modifiables. Les mises en page très complexes ou imbriquées peuvent nécessiter un léger ajustement manuel."
+        },
+        {
+          "q": "Quel format de fichier vais-je obtenir ?",
+          "a": "Un fichier .docx standard, compatible avec Microsoft Word, Google Docs et LibreOffice Writer."
+        },
+        {
           "q": "Y a-t-il une limite de taille ?",
           "a": "Les utilisateurs gratuits peuvent convertir des PDF jusqu'à 10 Mo. Les utilisateurs Pro vont jusqu'à 100 Mo."
         }
@@ -128,7 +180,7 @@
     "word-to-pdf": {
       "title": "Word en PDF",
       "tagline": "Convertissez des documents Word en PDF instantanément.",
-      "intro": "Importez votre fichier .doc ou .docx et nous le convertissons en un PDF professionnel identique à votre document Word.",
+      "intro": "Transformer un document Word en PDF est le moyen le plus simple de s'assurer qu'il s'affiche à l'identique sur tous les appareils et qu'il ne puisse pas être modifié par accident — utile pour un CV, un contrat, une facture ou tout document que vous envoyez dans sa forme définitive. L'outil Word en PDF de ConvertPDF accepte aussi bien l'ancien format .doc que les fichiers .docx modernes, et produit un PDF qui reprend exactement la mise en page de votre document : polices, images, en-têtes, pieds de page et tableaux sont conservés tels qu'ils apparaissaient dans Word. Aucun besoin d'avoir Word installé — la conversion s'effectue sur notre serveur, elle fonctionne donc de la même façon sous Windows, Mac, Chromebook ou sur mobile. Le fichier est supprimé de nos serveurs dès que vous l'avez téléchargé.",
       "faq": [
         {
           "q": "Prend-il en charge .doc et .docx ?",
@@ -139,6 +191,14 @@
           "a": "Oui : le PDF produit respecte la mise en page du document Word, y compris les polices, images et tableaux."
         },
         {
+          "q": "Ai-je besoin de Microsoft Word installé pour utiliser cet outil ?",
+          "a": "Non — la conversion s'effectue entièrement sur notre serveur, elle fonctionne donc depuis n'importe quel appareil équipé d'un navigateur."
+        },
+        {
+          "q": "Puis-je convertir un fichier Google Docs ?",
+          "a": "Téléchargez-le d'abord depuis Google Docs au format .docx (Fichier → Télécharger → Microsoft Word), puis importez-le ici."
+        },
+        {
           "q": "Est-ce gratuit ?",
           "a": "Oui, entièrement gratuit et sans filigrane."
         }
@@ -147,7 +207,7 @@
     "rotate-pdf": {
       "title": "Pivoter PDF",
       "tagline": "Faites pivoter toutes les pages dans la bonne orientation.",
-      "intro": "Importez votre PDF, choisissez une rotation de 90°, 180° ou 270° et téléchargez le fichier corrigé instantanément. Toutes les pages pivotent ensemble.",
+      "intro": "Un PDF mal orienté — généralement à cause d'un scanner qui a inséré la page de travers ou à l'envers — est un petit problème, mais agaçant. L'outil Pivoter de ConvertPDF le corrige en quelques clics : importez votre PDF, choisissez 90°, 180° ou 270°, et téléchargez une copie corrigée avec toutes les pages tournées de la même façon. La rotation ne change que les métadonnées d'orientation de la page — elle ne réencode ni ne rééchantillonne le contenu, il n'y a donc aucune perte de qualité d'image ou de texte, quel que soit le nombre de rotations. Cela couvre le cas le plus courant, où tout un document a été scanné dans la même orientation erronée. Si seules certaines pages doivent être pivotées et pas d'autres, ce contrôle page par page est disponible avec le plan Pro.",
       "faq": [
         {
           "q": "Puis-je faire pivoter une seule page ?",
@@ -158,6 +218,14 @@
           "a": "Non. La rotation est une modification de métadonnées : la qualité du contenu n'est pas affectée."
         },
         {
+          "q": "Quels angles de rotation sont pris en charge ?",
+          "a": "90°, 180° et 270° — de quoi couvrir toute orientation produite par un scanner ou un appareil photo."
+        },
+        {
+          "q": "Faire pivoter un PDF plusieurs fois le détériore-t-il ?",
+          "a": "Non — c'est une modification de métadonnées, pas un nouveau rendu, vous pouvez donc le faire pivoter autant de fois que vous le souhaitez sans aucune perte de qualité."
+        },
+        {
           "q": "Est-ce gratuit de faire pivoter des fichiers PDF ?",
           "a": "Oui, entièrement gratuit et sans limite."
         }
@@ -166,7 +234,7 @@
     "pdf-to-jpg": {
       "title": "PDF en JPG",
       "tagline": "Convertissez chaque page du PDF en image JPG de haute qualité.",
-      "intro": "Importez votre PDF et nous convertissons chaque page en image JPG haute résolution. Toutes les pages sont regroupées dans un ZIP pour un téléchargement facile.",
+      "intro": "Parfois, vous avez besoin d'une page de PDF sous forme d'image concrète — pour l'insérer dans une présentation, la partager en aperçu, ou la publier quelque part qui n'accepte pas les PDF. L'outil PDF en JPG de ConvertPDF convertit chaque page de votre PDF en une image JPG distincte à 150 PPP, suffisamment nette pour un affichage à l'écran et une impression standard. Importez votre fichier, et une fois le traitement terminé, vous obtenez toutes les images de pages regroupées dans un seul fichier ZIP, prêt à télécharger. Si votre PDF compte de nombreuses pages mais que vous n'avez besoin que d'une seule image, passez-le d'abord par notre outil Diviser PDF pour extraire cette page, puis convertissez uniquement cette page en JPG. Comme pour nos autres outils, la conversion se fait en mémoire et votre fichier est supprimé de nos serveurs dès que vous téléchargez le résultat.",
       "faq": [
         {
           "q": "Quelle est la résolution des images JPG ?",
@@ -177,6 +245,10 @@
           "a": "Importez un PDF d'une seule page ou utilisez d'abord notre outil Diviser PDF pour extraire la page voulue."
         },
         {
+          "q": "Que se passe-t-il si mon PDF compte de nombreuses pages ?",
+          "a": "Chaque page devient son propre JPG, et toutes sont regroupées dans un seul ZIP à télécharger."
+        },
+        {
           "q": "Est-ce gratuit ?",
           "a": "Oui, entièrement gratuit et sans filigrane sur les images."
         }
@@ -185,7 +257,7 @@
     "protect-pdf": {
       "title": "Protéger PDF",
       "tagline": "Ajoutez un mot de passe à votre PDF pour empêcher tout accès non autorisé.",
-      "intro": "Importez votre PDF, saisissez un mot de passe et téléchargez le fichier chiffré. Seules les personnes disposant du mot de passe pourront l'ouvrir.",
+      "intro": "Si un PDF contient quelque chose de sensible — un contrat, un relevé financier ou une pièce d'identité —, ajouter un mot de passe empêche toute personne qui ne le possède pas de l'ouvrir. L'outil Protéger de ConvertPDF chiffre votre PDF avec un chiffrement 128 bits, la même norme prise en charge par Adobe Acrobat et pratiquement tous les autres lecteurs de PDF, de sorte que les destinataires n'ont besoin d'aucun logiciel particulier pour ouvrir un fichier protégé — juste le mot de passe que vous leur communiquez séparément. Importez votre PDF, définissez un mot de passe et téléchargez la version chiffrée ; le fichier original non protégé est supprimé immédiatement de nos serveurs. Conservez bien le mot de passe : comme nous ne le stockons pas, nous n'avons aucun moyen de le récupérer ou de le réinitialiser en cas de perte.",
       "faq": [
         {
           "q": "Quel chiffrement est utilisé ?",
@@ -198,6 +270,18 @@
         {
           "q": "Mon fichier est-il sécurisé pendant l'import ?",
           "a": "Les fichiers sont traités en mémoire et supprimés immédiatement après le téléchargement."
+        },
+        {
+          "q": "Que se passe-t-il si j'oublie le mot de passe ?",
+          "a": "Nous ne stockons pas votre mot de passe, il n'existe donc aucun moyen pour nous de le récupérer ou de le réinitialiser. Conservez-le en lieu sûr."
+        },
+        {
+          "q": "Le PDF protégé par mot de passe s'ouvrira-t-il dans n'importe quel lecteur ?",
+          "a": "Oui — le chiffrement PDF 128 bits est pris en charge par Adobe Acrobat, Preview, les visionneuses PDF des navigateurs et pratiquement tous les autres lecteurs."
+        },
+        {
+          "q": "Mon fichier original est-il conservé quelque part après la protection ?",
+          "a": "Non — l'original non protégé est supprimé de nos serveurs dès que la version chiffrée est créée."
         }
       ]
     }

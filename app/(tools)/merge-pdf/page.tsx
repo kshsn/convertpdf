@@ -9,6 +9,7 @@ export default async function Page() {
       slug="merge-pdf"
       content={dict.tools["merge-pdf"]}
       common={dict.common}
+      showGuide
     />
   );
 }

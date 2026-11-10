@@ -52,7 +52,7 @@
     "merge-pdf": {
       "title": "Gabung PDF",
       "tagline": "Gabungkan beberapa file PDF menjadi satu dokumen.",
-      "intro": "Unggah file PDF Anda, atur ulang urutannya, dan gabungkan menjadi satu dokumen dalam hitungan detik — tanpa instalasi perangkat lunak.",
+      "intro": "Menggabungkan file PDF adalah salah satu hal paling umum yang dilakukan orang dengan file PDF — menggabungkan surat lamaran dengan CV, menyatukan halaman hasil pindaian menjadi satu dokumen, atau menyusun beberapa laporan untuk klien. Alat Gabung dari ConvertPDF melakukannya langsung di browser Anda: seret file Anda, susun urutannya sesuai keinginan, lalu klik Gabung. Tidak perlu instalasi apa pun dan tidak perlu membuat akun. Anda dapat mengatur ulang urutan file sebelum digabung, dan dokumen akhir mengikuti persis urutan yang ditampilkan di layar. Proses hanya memakan waktu beberapa detik, dan file Anda otomatis dihapus dari server kami begitu unduhan selesai (atau maksimal setelah 1 jam, mana yang lebih dulu). Akun gratis dapat menggabungkan hingga 2 file per penggabungan; paket Pro menghapus batas ini untuk kebutuhan yang lebih besar.",
       "faq": [
         {
           "q": "Berapa banyak file yang bisa saya gabungkan?",
@@ -62,13 +62,29 @@
           "q": "Apakah urutannya dipertahankan?",
           "a": "Ya — Anda dapat mengatur ulang file sebelum menggabungkan, dan PDF akhir mempertahankan urutan tersebut."
         },
+        {
+          "q": "Apakah saya perlu akun untuk menggabungkan PDF?",
+          "a": "Tidak perlu mendaftar untuk menggabungkan hingga 2 file. Cukup unggah, susun urutan, lalu unduh."
+        },
+        {
+          "q": "Apa yang terjadi pada file saya setelah digabung?",
+          "a": "File diproses di memori dan otomatis dihapus setelah unduhan selesai, dan paling lambat 1 jam setelah diunggah. Kami tidak menyimpan salinan atau membagikannya kepada siapa pun."
+        },
+        {
+          "q": "Bisakah saya menggabungkan PDF hasil pindaian atau dengan ukuran halaman berbeda?",
+          "a": "Bisa — halaman tetap mempertahankan ukuran dan orientasi aslinya; penggabungan tidak mengubah ukuran atau memotong apa pun."
+        },
+        {
+          "q": "Apakah penggabungan berfungsi di ponsel?",
+          "a": "Ya — alat ini berfungsi di browser mobile atau desktop modern mana pun, tanpa perlu mengunduh aplikasi."
+        },
         { "q": "Apakah gratis?", "a": "Ya, sepenuhnya gratis tanpa tanda air." }
       ]
     },
     "split-pdf": {
       "title": "Pisah PDF",
       "tagline": "Pisahkan PDF menjadi beberapa file terpisah, satu per halaman.",
-      "intro": "Unggah PDF Anda dan klik Pisah. Setiap halaman disimpan sebagai PDF tersendiri dan dibundel dalam ZIP untuk diunduh.",
+      "intro": "Terkadang Anda hanya butuh sebagian dari PDF — satu bab tertentu, halaman terakhir sebuah faktur, atau tiga halaman pertama dari dokumen hasil pindaian — dan sisanya hanya menghalangi. Alat Pisah dari ConvertPDF mengambil persis halaman yang Anda butuhkan, atau memecah seluruh dokumen menjadi satu file per halaman. Unggah PDF Anda, lalu biarkan kolom halaman kosong untuk memisah setiap halaman menjadi file tersendiri (dikirim sebagai ZIP), atau masukkan rentang seperti 1-3, 5, 7-9 untuk mengambil hanya yang Anda butuhkan. Proses pemisahan seluruhnya berlangsung di memori server kami — tidak ada yang ditulis ke disk — dan file Anda langsung dihapus setelah Anda mengunduh hasilnya. Pengguna gratis dapat memisah PDF hingga 10MB; Pro menaikkan batas itu menjadi 100MB.",
       "faq": [
         {
           "q": "Bagaimana cara memisah PDF menjadi halaman individu?",
@@ -79,6 +95,18 @@
           "a": "Ya. Masukkan rentang seperti 1-3, 5, 7-9 dan hanya halaman tersebut yang dipisah menjadi file terpisah."
         },
         {
+          "q": "Format apa yang digunakan untuk rentang halaman?",
+          "a": "Nomor halaman dan/atau rentang yang dipisahkan koma, misalnya 1-3, 5, 7-9. Spasi diabaikan."
+        },
+        {
+          "q": "Apakah saya mendapat satu file atau beberapa?",
+          "a": "Memisah berdasarkan rentang memberi Anda satu PDF berisi halaman-halaman tersebut. Membiarkan kolom kosong memberi Anda setiap halaman sebagai PDF tersendiri, digabung dalam satu ZIP."
+        },
+        {
+          "q": "Apakah pemisahan mengurangi kualitas PDF?",
+          "a": "Tidak — halaman diambil apa adanya, dengan resolusi, font, dan format yang sama seperti aslinya."
+        },
+        {
           "q": "Apakah ada batas ukuran file?",
           "a": "Pengguna gratis dapat memisah PDF hingga 10MB. Pengguna Pro hingga 100MB."
         }
@@ -87,7 +115,7 @@
     "compress-pdf": {
       "title": "Kompres PDF",
       "tagline": "Kurangi ukuran file PDF tanpa menurunkan kualitas.",
-      "intro": "Kompresi kami menghapus data berlebih dan mengoptimalkan gambar sambil menjaga keterbacaan. Sebagian besar PDF dapat dikecilkan 30–70%.",
+      "intro": "File PDF berukuran besar adalah masalah umum — batas lampiran email, unggahan lambat ke suatu portal, atau kehabisan ruang penyimpanan. Alat Kompres dari ConvertPDF mengecilkan file Anda dengan mengodekan ulang gambar yang tertanam dan menghapus data internal yang berlebihan, sambil mempertahankan teks, grafik vektor, dan tata letak halaman. Sebagian besar PDF menjadi 30–70% lebih kecil — dokumen hasil pindaian dan PDF yang penuh gambar (brosur, presentasi yang diekspor sebagai PDF, laporan penuh foto) mengalami pengurangan terbesar, karena PDF berisi teks murni punya lebih sedikit yang bisa dikompres. Unggah file Anda, dan dalam hitungan detik Anda akan mendapat versi yang lebih kecil siap diunduh, tanpa perubahan yang terlihat pada tampilan atau isi dokumen. Pengguna gratis dapat mengompres file hingga 10MB; Pro menghapus batas itu hingga 100MB.",
       "faq": [
         {
           "q": "Seberapa besar saya bisa mengurangi ukuran file PDF?",
@@ -98,6 +126,18 @@
           "a": "Kami menggunakan kompresi tanpa kehilangan — teks dan grafik vektor tidak terpengaruh."
         },
         {
+          "q": "Mengapa PDF saya hanya sedikit mengecil?",
+          "a": "PDF yang hanya berisi teks memang sudah ringkas — lebih sedikit yang bisa dikompres dibandingkan PDF penuh gambar beresolusi tinggi atau hasil pindaian."
+        },
+        {
+          "q": "Bisakah saya mengompres PDF hasil pindaian?",
+          "a": "Bisa — dokumen hasil pindaian (yang sebenarnya hanyalah gambar tertanam) biasanya mengalami pengurangan ukuran paling besar."
+        },
+        {
+          "q": "Apakah kompresi mengubah tampilan cetak PDF?",
+          "a": "Tidak — tata letak halaman dan teks tetap identik; hanya data gambar yang mendasarinya yang dioptimalkan."
+        },
+        {
           "q": "Berapa ukuran file maksimum?",
           "a": "Pengguna gratis: 10MB. Pengguna Pro: 100MB."
         }
@@ -106,7 +146,7 @@
     "pdf-to-word": {
       "title": "PDF ke Word",
       "tagline": "Konversi PDF menjadi dokumen Word yang dapat diedit.",
-      "intro": "Unggah PDF Anda dan kami mengonversinya menjadi file .docx yang dapat diedit. Teks, tabel, dan format dasar dipertahankan.",
+      "intro": "Mengonversi PDF kembali menjadi dokumen yang dapat diedit adalah salah satu kebutuhan PDF yang paling sering diminta — Anda punya kontrak, laporan, atau formulir dalam bentuk PDF dan perlu benar-benar mengedit teksnya, bukan mengetik ulang dari awal. Alat PDF ke Word dari ConvertPDF mengonversi file Anda menjadi dokumen .docx standar, mempertahankan judul, paragraf, tabel, dan format dasar sehingga bisa langsung dibuka di Microsoft Word, Google Docs, atau LibreOffice Writer — tanpa plugin apa pun. Kualitas konversi bergantung pada bagaimana PDF asli dibuat: file yang diekspor langsung dari Word atau Google Docs akan terkonversi dengan bersih karena struktur teks internalnya terjaga, sementara PDF yang berasal dari gambar hasil pindaian tanpa lapisan teks akan memerlukan OCR terlebih dahulu, karena tidak ada teks yang bisa diekstrak. Pengguna gratis dapat mengonversi file hingga 10MB; Pro menaikkan batas itu menjadi 100MB.",
       "faq": [
         {
           "q": "Apakah formatnya akan dipertahankan?",
@@ -117,6 +157,18 @@
           "a": "Ya — hasilnya adalah file .docx yang sepenuhnya dapat diedit, kompatibel dengan Microsoft Word dan Google Docs."
         },
         {
+          "q": "Bisakah saya mengonversi PDF hasil pindaian ke Word?",
+          "a": "Jika hasil pindaian tidak memiliki lapisan teks, tidak ada yang bisa diekstrak — Anda perlu melakukan OCR terlebih dahulu. PDF yang dihasilkan dari pengolah kata terkonversi dengan bersih karena teksnya sudah tertanam."
+        },
+        {
+          "q": "Apakah tabel akan terkonversi dengan benar?",
+          "a": "Tabel sederhana akan menjadi tabel Word asli yang dapat diedit. Tata letak yang sangat kompleks atau bertingkat mungkin memerlukan sedikit perbaikan manual."
+        },
+        {
+          "q": "Format file apa yang akan saya dapatkan?",
+          "a": "File .docx standar, kompatibel dengan Microsoft Word, Google Docs, dan LibreOffice Writer."
+        },
+        {
           "q": "Apakah ada batas ukuran file?",
           "a": "Pengguna gratis dapat mengonversi PDF hingga 10MB. Pengguna Pro hingga 100MB."
         }
@@ -125,7 +177,7 @@
     "word-to-pdf": {
       "title": "Word ke PDF",
       "tagline": "Konversi dokumen Word ke PDF secara instan.",
-      "intro": "Unggah file .doc atau .docx Anda dan kami mengonversinya menjadi PDF profesional yang tampak persis seperti dokumen Word Anda.",
+      "intro": "Mengubah dokumen Word menjadi PDF adalah cara termudah untuk memastikan tampilannya sama di semua perangkat dan tidak bisa diedit secara tidak sengaja — berguna untuk CV, kontrak, faktur, atau apa pun yang Anda kirim dalam bentuk final. Alat Word ke PDF dari ConvertPDF menerima format .doc lama maupun file .docx modern, dan menghasilkan PDF yang persis sesuai tata letak dokumen Anda: font, gambar, header, footer, dan tabel semuanya terbawa seperti aslinya di Word. Tidak perlu menginstal Word — konversi berlangsung di server kami, sehingga bekerja sama saja di Windows, Mac, Chromebook, atau ponsel. File dihapus dari server kami begitu Anda selesai mengunduhnya.",
       "faq": [
         {
           "q": "Apakah mendukung .doc dan .docx?",
@@ -135,13 +187,21 @@
           "q": "Apakah font dan gambar dipertahankan?",
           "a": "Ya — PDF yang dihasilkan sesuai dengan tata letak dokumen Word termasuk font, gambar, dan tabel."
         },
+        {
+          "q": "Apakah saya perlu menginstal Microsoft Word untuk menggunakan ini?",
+          "a": "Tidak — konversi berlangsung sepenuhnya di server kami, jadi berfungsi dari perangkat apa pun yang memiliki browser."
+        },
+        {
+          "q": "Bisakah saya mengonversi file Google Docs?",
+          "a": "Unduh dulu dari Google Docs sebagai .docx (File → Download → Microsoft Word), lalu unggah ke sini."
+        },
         { "q": "Apakah gratis?", "a": "Ya, sepenuhnya gratis tanpa tanda air." }
       ]
     },
     "rotate-pdf": {
       "title": "Putar PDF",
       "tagline": "Putar semua halaman ke orientasi yang benar.",
-      "intro": "Unggah PDF Anda, pilih rotasi 90°, 180°, atau 270°, dan unduh file yang sudah diperbaiki secara instan. Semua halaman diputar bersamaan.",
+      "intro": "PDF dengan orientasi yang salah — biasanya akibat pemindai yang memasukkan halaman secara miring atau terbalik — adalah masalah kecil namun mengganggu. Alat Putar dari ConvertPDF memperbaikinya dalam beberapa klik: unggah PDF Anda, pilih 90°, 180°, atau 270°, dan unduh salinan yang sudah diperbaiki dengan setiap halaman diputar dengan cara yang sama. Rotasi hanya mengubah metadata orientasi halaman — tidak mengodekan ulang atau melakukan resampling terhadap konten, sehingga tidak ada penurunan kualitas gambar atau teks berapa pun kali Anda memutarnya. Ini mencakup kasus paling umum, yaitu ketika seluruh dokumen dipindai dengan orientasi salah yang sama. Jika hanya beberapa halaman yang perlu diputar dan yang lain tidak, kontrol per halaman tersedia di paket Pro.",
       "faq": [
         {
           "q": "Bisakah saya memutar hanya satu halaman?",
@@ -152,6 +212,14 @@
           "a": "Tidak. Rotasi adalah perubahan metadata — kualitas konten tidak terpengaruh."
         },
         {
+          "q": "Sudut rotasi apa saja yang didukung?",
+          "a": "90°, 180°, dan 270° — mencakup semua orientasi yang mungkin dihasilkan oleh pemindai atau kamera."
+        },
+        {
+          "q": "Apakah memutar PDF berkali-kali menurunkan kualitasnya?",
+          "a": "Tidak — ini adalah perubahan metadata, bukan rendering ulang, jadi Anda bisa memutarnya sesering yang Anda mau tanpa penurunan kualitas."
+        },
+        {
           "q": "Apakah gratis memutar file PDF?",
           "a": "Ya, sepenuhnya gratis tanpa batas."
         }
@@ -160,7 +228,7 @@
     "pdf-to-jpg": {
       "title": "PDF ke JPG",
       "tagline": "Konversi setiap halaman PDF menjadi gambar JPG berkualitas tinggi.",
-      "intro": "Unggah PDF Anda dan kami mengonversi setiap halaman menjadi gambar JPG beresolusi tinggi. Semua halaman dibundel dalam ZIP agar mudah diunduh.",
+      "intro": "Terkadang Anda butuh halaman PDF dalam bentuk gambar sungguhan — untuk dimasukkan ke presentasi, dibagikan sebagai pratinjau, atau diunggah ke tempat yang tidak menerima PDF. Alat PDF ke JPG dari ConvertPDF mengonversi setiap halaman PDF Anda menjadi gambar JPG tersendiri pada 150 DPI, cukup tajam untuk tampilan layar dan pencetakan standar. Unggah file Anda, dan begitu proses selesai, Anda akan mendapatkan semua gambar halaman terbundel dalam satu file ZIP, siap diunduh. Jika PDF Anda memiliki banyak halaman tetapi Anda hanya butuh satu gambar, proses dulu melalui alat Pisah PDF kami untuk mengambil halaman itu, lalu konversi hanya halaman tersebut ke JPG. Seperti alat kami yang lain, konversi berlangsung di memori dan file Anda dihapus dari server kami begitu Anda mengunduh hasilnya.",
       "faq": [
         {
           "q": "Berapa resolusi gambar JPG-nya?",
@@ -171,6 +239,10 @@
           "a": "Unggah PDF satu halaman atau gunakan alat Pisah PDF kami terlebih dahulu untuk mengambil halaman yang Anda butuhkan."
         },
         {
+          "q": "Bagaimana jika PDF saya memiliki banyak halaman?",
+          "a": "Setiap halaman dikonversi menjadi JPG-nya sendiri, dan semuanya digabung dalam satu file ZIP untuk diunduh."
+        },
+        {
           "q": "Apakah gratis?",
           "a": "Ya, sepenuhnya gratis tanpa tanda air pada gambar."
         }
@@ -179,7 +251,7 @@
     "protect-pdf": {
       "title": "Lindungi PDF",
       "tagline": "Tambahkan kata sandi ke PDF Anda untuk mencegah akses tidak sah.",
-      "intro": "Unggah PDF Anda, masukkan kata sandi, dan unduh file terenkripsi. Hanya orang dengan kata sandi yang dapat membukanya.",
+      "intro": "Jika sebuah PDF berisi sesuatu yang sensitif — kontrak, laporan keuangan, atau identitas pribadi — menambahkan kata sandi mencegah siapa pun tanpa kata sandi tersebut untuk membukanya. Alat Lindungi dari ConvertPDF mengenkripsi PDF Anda dengan enkripsi 128-bit, standar yang sama yang didukung Adobe Acrobat dan hampir semua pembaca PDF lainnya, sehingga penerima tidak memerlukan perangkat lunak khusus untuk membuka file yang dilindungi — cukup kata sandi yang Anda bagikan secara terpisah. Unggah PDF Anda, atur kata sandi, dan unduh versi terenkripsi; file asli yang tidak dilindungi langsung dihapus dari server kami. Simpan kata sandi di tempat yang aman — karena kami tidak menyimpannya, tidak ada cara bagi kami untuk memulihkan atau mengatur ulang jika hilang.",
       "faq": [
         {
           "q": "Enkripsi apa yang digunakan?",
@@ -192,6 +264,18 @@
         {
           "q": "Apakah file saya aman selama pengunggahan?",
           "a": "File diproses di memori dan dihapus segera setelah diunduh."
+        },
+        {
+          "q": "Apa yang terjadi jika saya lupa kata sandinya?",
+          "a": "Kami tidak menyimpan kata sandi Anda, jadi tidak ada cara bagi kami untuk memulihkan atau mengatur ulangnya. Simpanlah di tempat yang aman."
+        },
+        {
+          "q": "Apakah PDF yang dilindungi kata sandi bisa dibuka di pembaca PDF mana pun?",
+          "a": "Ya — enkripsi PDF 128-bit didukung oleh Adobe Acrobat, Preview, penampil PDF di browser, dan hampir semua pembaca lainnya."
+        },
+        {
+          "q": "Apakah file asli saya disimpan di suatu tempat setelah dilindungi?",
+          "a": "Tidak — file asli yang tidak dilindungi dihapus dari server kami segera setelah versi terenkripsi dibuat."
         }
       ]
     }

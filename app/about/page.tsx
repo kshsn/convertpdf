@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "About ConvertPDF — Free Online PDF Tools",
   description: "Learn about ConvertPDF — fast, free, and private PDF tools.",
@@ -48,9 +50,25 @@ export default function AboutPage() {
           reliable alternative to expensive desktop software.
         </p>
 
+        <h2 className="text-2xl font-bold text-gray-800 mb-3">Who we are</h2>
+        <p className="text-gray-600 mb-6">
+          ConvertPDF is built and operated by ProAILabs and is available at
+          proailabs.net. We keep the tools free for everyday use and fund the
+          service with advertising and an optional Pro plan for larger files.
+          Read our{" "}
+          <Link href="/blog" className="text-red-600 hover:underline">
+            PDF guides
+          </Link>{" "}
+          for tips on getting the most out of each tool.
+        </p>
+
         <h2 className="text-2xl font-bold text-gray-800 mb-3">Contact</h2>
         <p className="text-gray-600">
-          Have feedback or questions?{" "}
+          Have feedback or questions? Visit our{" "}
+          <Link href="/contact" className="text-red-600 hover:underline">
+            Contact page
+          </Link>{" "}
+          or email{" "}
           <a
             href="mailto:kshsna@gmail.com"
             className="text-red-600 hover:underline"

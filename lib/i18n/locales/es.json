@@ -56,7 +56,7 @@
     "merge-pdf": {
       "title": "Unir PDF",
       "tagline": "Combina varios archivos PDF en un solo documento.",
-      "intro": "Sube tus archivos PDF, reordénalos y únelos en un único documento en segundos, sin instalar software.",
+      "intro": "Unir archivos PDF es una de las tareas más comunes con archivos PDF: combinar una carta de presentación con un currículum, juntar páginas escaneadas en un solo documento o reunir un conjunto de informes para un cliente. La herramienta Unir de ConvertPDF lo hace directamente en tu navegador: arrastra tus archivos, ordénalos como quieras y haz clic en Unir. No hay nada que instalar ni cuenta que crear. Puedes reordenar los archivos antes de unirlos, y el documento final sigue exactamente el orden que ves en pantalla. El proceso tarda solo unos segundos, y tus archivos se eliminan automáticamente de nuestros servidores en cuanto termina la descarga (o al cabo de 1 hora como máximo, lo que ocurra primero). Las cuentas gratuitas pueden unir hasta 2 archivos por vez; el plan Pro elimina ese límite para lotes más grandes.",
       "faq": [
         {
           "q": "¿Cuántos archivos puedo unir?",
@@ -67,6 +67,22 @@
           "a": "Sí: puedes reordenar los archivos antes de unirlos y el PDF final conserva ese orden."
         },
         {
+          "q": "¿Necesito una cuenta para unir PDF?",
+          "a": "No hace falta registrarse para unir hasta 2 archivos. Solo sube, reordena y descarga."
+        },
+        {
+          "q": "¿Qué pasa con mis archivos después de unirlos?",
+          "a": "Los archivos se procesan en memoria y se eliminan automáticamente al terminar la descarga, y en cualquier caso antes de que pase 1 hora desde la subida. No guardamos copias ni las compartimos con nadie."
+        },
+        {
+          "q": "¿Puedo unir PDF escaneados o con distintos tamaños de página?",
+          "a": "Sí — las páginas conservan su tamaño y orientación originales; unir archivos no redimensiona ni recorta nada."
+        },
+        {
+          "q": "¿Funciona en el móvil?",
+          "a": "Sí — la herramienta funciona en cualquier navegador moderno, de escritorio o móvil, sin necesidad de instalar una app."
+        },
+        {
           "q": "¿Es gratis?",
           "a": "Sí, completamente gratis y sin marcas de agua."
         }
@@ -75,7 +91,7 @@
     "split-pdf": {
       "title": "Dividir PDF",
       "tagline": "Divide un PDF en archivos separados, uno por página.",
-      "intro": "Sube tu PDF y haz clic en Dividir. Cada página se guarda como su propio PDF y se agrupa en un ZIP para descargar.",
+      "intro": "A veces solo necesitas una parte de un PDF —un capítulo concreto, la última página de una factura, las tres primeras páginas de un documento escaneado— y el resto simplemente estorba. La herramienta Dividir de ConvertPDF extrae exactamente las páginas que necesitas, o separa todo el documento en un archivo por página. Sube tu PDF y, o bien deja el campo de páginas vacío para dividir cada página en su propio archivo (entregado como ZIP), o introduce un rango como 1-3, 5, 7-9 para extraer solo lo que te haga falta. La división ocurre totalmente en la memoria de nuestros servidores —no se escribe nada en disco— y tu archivo se elimina en cuanto descargas el resultado. Los usuarios gratuitos pueden dividir PDF de hasta 10 MB; Pro eleva ese límite a 100 MB.",
       "faq": [
         {
           "q": "¿Cómo divido un PDF en páginas individuales?",
@@ -86,6 +102,18 @@
           "a": "Sí. Introduce un rango como 1-3, 5, 7-9 y solo esas páginas se dividirán en archivos separados."
         },
         {
+          "q": "¿En qué formato debo escribir el rango de páginas?",
+          "a": "Números de página y/o rangos separados por comas, por ejemplo 1-3, 5, 7-9. Los espacios se ignoran."
+        },
+        {
+          "q": "¿Obtengo un archivo o varios?",
+          "a": "Dividir por rango te da un único PDF con esas páginas. Dejar el campo vacío te da cada página como su propio PDF, agrupadas en un ZIP."
+        },
+        {
+          "q": "¿Dividir reduce la calidad del PDF?",
+          "a": "No — las páginas se extraen tal cual, con la misma resolución, fuentes y formato del original."
+        },
+        {
           "q": "¿Hay un límite de tamaño?",
           "a": "Los usuarios gratuitos pueden dividir PDF de hasta 10 MB. Los usuarios Pro llegan a 100 MB."
         }
@@ -94,7 +122,7 @@
     "compress-pdf": {
       "title": "Comprimir PDF",
       "tagline": "Reduce el tamaño del PDF sin perder calidad.",
-      "intro": "Nuestra compresión elimina datos redundantes y optimiza las imágenes manteniendo la legibilidad. La mayoría de los PDF se reducen entre un 30 y un 70 %.",
+      "intro": "Los archivos PDF pesados son un problema habitual: límites de tamaño en el correo, subidas lentas a un portal o falta de espacio de almacenamiento. La herramienta Comprimir de ConvertPDF reduce tu archivo recodificando las imágenes incrustadas y eliminando datos internos redundantes, sin tocar el texto, los gráficos vectoriales ni el diseño de página. La mayoría de los PDF se reducen entre un 30 y un 70 % — los documentos escaneados y los PDF con muchas imágenes (folletos, presentaciones exportadas como PDF, informes cargados de fotos) son los que más se reducen, ya que un PDF puramente de texto tiene menos margen para comprimir. Sube tu archivo y en cuestión de segundos tendrás una versión más ligera lista para descargar, sin ningún cambio visible en cómo se ve o se lee el documento. Los usuarios gratuitos pueden comprimir archivos de hasta 10 MB; Pro elimina ese límite hasta 100 MB.",
       "faq": [
         {
           "q": "¿Cuánto puedo reducir el tamaño de un PDF?",
@@ -105,6 +133,18 @@
           "a": "Usamos compresión sin pérdidas: el texto y los gráficos vectoriales no se ven afectados."
         },
         {
+          "q": "¿Por qué mi PDF apenas se redujo?",
+          "a": "Los PDF que son solo texto ya son bastante compactos: tienen menos margen de compresión que los PDF llenos de imágenes de alta resolución o escaneos."
+        },
+        {
+          "q": "¿Puedo comprimir un PDF escaneado?",
+          "a": "Sí — los documentos escaneados (que en realidad son imágenes incrustadas) suelen mostrar la mayor reducción de tamaño."
+        },
+        {
+          "q": "¿Comprimir cambia cómo se imprime el PDF?",
+          "a": "No — el diseño de página y el texto permanecen idénticos; solo se optimizan los datos de imagen subyacentes."
+        },
+        {
           "q": "¿Cuál es el tamaño máximo de archivo?",
           "a": "Usuarios gratuitos: 10 MB. Usuarios Pro: 100 MB."
         }
@@ -113,7 +153,7 @@
     "pdf-to-word": {
       "title": "PDF a Word",
       "tagline": "Convierte un PDF en un documento de Word editable.",
-      "intro": "Sube tu PDF y lo convertimos en un archivo .docx editable. Se conservan el texto, las tablas y el formato básico.",
+      "intro": "Convertir un PDF de nuevo en un documento editable es una de las tareas más solicitadas con archivos PDF: tienes un contrato, un informe o un formulario en PDF y necesitas editar el texto de verdad en lugar de volver a escribirlo desde cero. La herramienta PDF a Word de ConvertPDF convierte tu archivo en un documento .docx estándar, conservando títulos, párrafos, tablas y el formato básico para que se abra directamente en Microsoft Word, Google Docs o LibreOffice Writer, sin necesidad de complementos. La calidad de la conversión depende de cómo se creó el PDF original: los archivos exportados directamente desde Word o Google Docs se convierten limpiamente porque su estructura de texto interna se conserva, mientras que los PDF que empezaron como imágenes escaneadas sin una capa de texto subyacente necesitarán OCR primero, ya que no hay texto que extraer. Los usuarios gratuitos pueden convertir archivos de hasta 10 MB; Pro eleva ese límite a 100 MB.",
       "faq": [
         {
           "q": "¿Se conservará el formato?",
@@ -124,6 +164,18 @@
           "a": "Sí: el resultado es un archivo .docx totalmente editable, compatible con Microsoft Word y Google Docs."
         },
         {
+          "q": "¿Puedo convertir un PDF escaneado a Word?",
+          "a": "Si el escaneo no tiene una capa de texto subyacente, no hay nada que extraer: primero necesitarás pasarlo por OCR. Los PDF generados desde un procesador de texto se convierten limpiamente porque el texto ya está incrustado."
+        },
+        {
+          "q": "¿Se convierten bien las tablas?",
+          "a": "Las tablas sencillas se convierten en tablas de Word reales y editables. Los diseños muy complejos o anidados pueden necesitar algún ajuste manual menor."
+        },
+        {
+          "q": "¿En qué formato de archivo obtengo el resultado?",
+          "a": "Un archivo .docx estándar, compatible con Microsoft Word, Google Docs y LibreOffice Writer."
+        },
+        {
           "q": "¿Hay un límite de tamaño?",
           "a": "Los usuarios gratuitos pueden convertir PDF de hasta 10 MB. Los usuarios Pro llegan a 100 MB."
         }
@@ -132,7 +184,7 @@
     "word-to-pdf": {
       "title": "Word a PDF",
       "tagline": "Convierte documentos de Word a PDF al instante.",
-      "intro": "Sube tu archivo .doc o .docx y lo convertimos en un PDF profesional idéntico a tu documento de Word.",
+      "intro": "Convertir un documento de Word en PDF es la forma más sencilla de garantizar que se vea igual en cualquier dispositivo y que no se pueda editar por accidente: útil para currículums, contratos, facturas o cualquier cosa que envíes en su versión definitiva. La herramienta Word a PDF de ConvertPDF admite tanto el formato .doc antiguo como los archivos .docx modernos, y genera un PDF que coincide exactamente con el diseño de tu documento: las fuentes, imágenes, encabezados, pies de página y tablas se conservan tal como aparecían en Word. No hace falta tener Word instalado: la conversión ocurre en nuestro servidor, así que funciona igual en Windows, Mac, Chromebook o el móvil. El archivo se elimina de nuestros servidores en cuanto lo descargas.",
       "faq": [
         {
           "q": "¿Admite .doc y .docx?",
@@ -143,6 +195,14 @@
           "a": "Sí: el PDF resultante respeta el diseño del documento de Word, incluidas fuentes, imágenes y tablas."
         },
         {
+          "q": "¿Necesito tener Microsoft Word instalado para usar esto?",
+          "a": "No — la conversión ocurre por completo en nuestro servidor, así que funciona desde cualquier dispositivo con navegador."
+        },
+        {
+          "q": "¿Puedo convertir un archivo de Google Docs?",
+          "a": "Descárgalo primero desde Google Docs como .docx (Archivo → Descargar → Microsoft Word) y luego súbelo aquí."
+        },
+        {
           "q": "¿Es gratis?",
           "a": "Sí, completamente gratis y sin marcas de agua."
         }
@@ -151,7 +211,7 @@
     "rotate-pdf": {
       "title": "Rotar PDF",
       "tagline": "Rota todas las páginas a la orientación correcta.",
-      "intro": "Sube tu PDF, elige una rotación de 90°, 180° o 270° y descarga el archivo corregido al instante. Todas las páginas se rotan a la vez.",
+      "intro": "Un PDF con la orientación incorrecta —normalmente por un escáner que metió la hoja de lado o al revés— es un problema pequeño pero molesto. La herramienta Rotar de ConvertPDF lo soluciona en unos clics: sube tu PDF, elige 90°, 180° o 270°, y descarga una copia corregida con todas las páginas rotadas de la misma forma. La rotación solo cambia los metadatos de orientación de la página; no vuelve a codificar ni remuestrea el contenido, así que no hay pérdida de calidad en imagen o texto por muchas veces que rotes. Esto cubre el caso más habitual, en el que todo un documento se escaneó con la misma orientación equivocada. Si solo necesitas rotar algunas páginas y no otras, ese control por página está disponible en el plan Pro.",
       "faq": [
         {
           "q": "¿Puedo rotar solo una página?",
@@ -162,6 +222,14 @@
           "a": "No. La rotación es un cambio de metadatos: la calidad del contenido no se ve afectada."
         },
         {
+          "q": "¿Qué ángulos de rotación se admiten?",
+          "a": "90°, 180° y 270°, cubriendo cualquier orientación que pueda producir un escáner o una cámara."
+        },
+        {
+          "q": "¿Rotar un PDF varias veces lo deteriora?",
+          "a": "No — es un cambio de metadatos, no una nueva renderización, así que puedes rotarlo tantas veces como quieras sin ninguna pérdida de calidad."
+        },
+        {
           "q": "¿Es gratis rotar archivos PDF?",
           "a": "Sí, completamente gratis y sin límites."
         }
@@ -170,7 +238,7 @@
     "pdf-to-jpg": {
       "title": "PDF a JPG",
       "tagline": "Convierte cada página del PDF en una imagen JPG de alta calidad.",
-      "intro": "Sube tu PDF y convertimos cada página en una imagen JPG de alta resolución. Todas las páginas se agrupan en un ZIP para descargar fácilmente.",
+      "intro": "A veces necesitas una página de un PDF como imagen de verdad: para incluirla en una presentación, compartirla como vista previa o publicarla en algún sitio que no admite PDF. La herramienta PDF a JPG de ConvertPDF convierte cada página de tu PDF en una imagen JPG independiente a 150 PPP, nítida de sobra para verla en pantalla o imprimirla de forma estándar. Sube tu archivo y, en cuanto termine el proceso, obtendrás todas las imágenes de página agrupadas en un único ZIP listo para descargar. Si tu PDF tiene muchas páginas pero solo necesitas una imagen, pásalo antes por nuestra herramienta Dividir PDF para extraer esa página, y luego conviértela a JPG. Como con el resto de nuestras herramientas, la conversión ocurre en memoria y tu archivo se elimina de nuestros servidores en cuanto descargas el resultado.",
       "faq": [
         {
           "q": "¿Qué resolución tienen las imágenes JPG?",
@@ -181,6 +249,10 @@
           "a": "Sube un PDF de una sola página o usa antes nuestra herramienta Dividir PDF para extraer la página que necesitas."
         },
         {
+          "q": "¿Qué pasa si mi PDF tiene muchas páginas?",
+          "a": "Cada página se convierte en su propio JPG, y todas se agrupan en un único ZIP para descargar."
+        },
+        {
           "q": "¿Es gratis?",
           "a": "Sí, completamente gratis y sin marcas de agua en las imágenes."
         }
@@ -189,7 +261,7 @@
     "protect-pdf": {
       "title": "Proteger PDF",
       "tagline": "Añade una contraseña a tu PDF para evitar accesos no autorizados.",
-      "intro": "Sube tu PDF, introduce una contraseña y descarga el archivo cifrado. Solo quienes tengan la contraseña podrán abrirlo.",
+      "intro": "Si un PDF contiene algo sensible —un contrato, un estado financiero o un documento de identidad— añadir una contraseña impide que nadie sin ella pueda abrirlo. La herramienta Proteger de ConvertPDF cifra tu PDF con cifrado de 128 bits, el mismo estándar que admite Adobe Acrobat y prácticamente cualquier otro lector de PDF, así que los destinatarios no necesitan ningún software especial para abrir un archivo protegido: solo la contraseña que les compartas por separado. Sube tu PDF, establece una contraseña y descarga la versión cifrada; el archivo original sin proteger se elimina de nuestros servidores de inmediato. Guarda bien la contraseña: como no la almacenamos, no hay forma de recuperarla ni de restablecerla si la pierdes.",
       "faq": [
         {
           "q": "¿Qué cifrado se utiliza?",
@@ -202,6 +274,18 @@
         {
           "q": "¿Mi archivo está seguro durante la subida?",
           "a": "Los archivos se procesan en memoria y se eliminan inmediatamente después de la descarga."
+        },
+        {
+          "q": "¿Qué pasa si olvido la contraseña?",
+          "a": "No almacenamos tu contraseña, así que no hay forma de recuperarla ni restablecerla. Guárdala en un lugar seguro."
+        },
+        {
+          "q": "¿Se abrirá el PDF protegido con contraseña en cualquier lector?",
+          "a": "Sí — el cifrado de PDF de 128 bits es compatible con Adobe Acrobat, Preview, los visores de PDF del navegador y prácticamente cualquier otro lector."
+        },
+        {
+          "q": "¿Se conserva mi archivo original en algún sitio después de protegerlo?",
+          "a": "No — el original sin proteger se elimina de nuestros servidores en cuanto se crea la versión cifrada."
         }
       ]
     }

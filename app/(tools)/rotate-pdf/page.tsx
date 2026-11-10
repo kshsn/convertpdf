@@ -9,6 +9,7 @@ export default async function Page() {
       slug="rotate-pdf"
       content={dict.tools["rotate-pdf"]}
       common={dict.common}
+      showGuide
     />
   );
 }

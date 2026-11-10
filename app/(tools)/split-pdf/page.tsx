@@ -9,6 +9,7 @@ export default async function Page() {
       slug="split-pdf"
       content={dict.tools["split-pdf"]}
       common={dict.common}
+      showGuide
     />
   );
 }

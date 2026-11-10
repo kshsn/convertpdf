@@ -9,6 +9,7 @@ export default async function Page() {
       slug="pdf-to-jpg"
       content={dict.tools["pdf-to-jpg"]}
       common={dict.common}
+      showGuide
     />
   );
 }

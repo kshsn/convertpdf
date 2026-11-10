@@ -1,6 +1,8 @@
 // Blog / guide articles. Original how-to content that supports the tools.
 // Each section is a heading plus paragraphs (and optional bullet list).
 
+import { MORE_POSTS } from "./blog-more";
+
 export interface BlogSection {
   heading: string;
   paragraphs: string[];
@@ -17,7 +19,7 @@ export interface BlogPost {
   sections: BlogSection[];
 }
 
-export const BLOG_POSTS: BlogPost[] = [
+const BASE_POSTS: BlogPost[] = [
   {
     slug: "how-to-merge-pdf-files",
     title: "How to Merge PDF Files Into One Document (Free, No Software)",
@@ -418,6 +420,8 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 ];
+
+export const BLOG_POSTS: BlogPost[] = [...BASE_POSTS, ...MORE_POSTS];
 
 export function getPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);

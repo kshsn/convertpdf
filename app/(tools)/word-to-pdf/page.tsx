@@ -9,6 +9,7 @@ export default async function Page() {
       slug="word-to-pdf"
       content={dict.tools["word-to-pdf"]}
       common={dict.common}
+      showGuide
     />
   );
 }

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { ALL_TOOL_SLUGS } from "@/lib/tools";
 import { SITE_URL } from "@/lib/seo";
+import { BLOG_POSTS } from "@/lib/blog";
 import { locales, defaultLocale, localizedPath } from "@/lib/i18n/config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -31,7 +32,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   // English-only pages (not translated).
-  for (const p of ["pricing", "about", "privacy", "terms"]) {
+  const englishOnly = [
+    "pricing",
+    "about",
+    "contact",
+    "privacy",
+    "terms",
+    "blog",
+    ...BLOG_POSTS.map((b) => `blog/${b.slug}`),
+  ];
+  for (const p of englishOnly) {
     entries.push({
       url: `${SITE_URL}/${p}`,
       lastModified: now,
